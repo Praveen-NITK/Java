@@ -1,0 +1,28 @@
+package DesignPattern.StrategyPattern;
+public abstract class Duck{
+    // FlyBehavior flyBehavior;
+    // QuackBehavior quackBehavior;
+    private FlyBehavior flyBehavior;
+    private QuackBehavior quackBehavior;
+    public Duck(){
+
+    }
+    public abstract void display();
+    public void performFly(){
+        flyBehavior.fly();
+    }
+
+    public void performQuack(){
+        quackBehavior.quack();
+    }
+
+    public void swim(){
+        System.out.println("All ducks float !");
+    }
+    public void setFlyBehavior(FlyBehavior fb){
+        this.flyBehavior=fb;
+    }
+    public void setQuackBehavior(QuackBehavior qb){
+        quackBehavior=qb;
+    }
+}
