@@ -59,7 +59,7 @@ public class RobotMeet{
 
     private static void right(Robot r) {
         r.location++;
-        System.out.println(r.name+" moving one right ");
+        System.out.println(r.name+" moving one right");
     }
 
     private static boolean isHotPoint(int position) {
