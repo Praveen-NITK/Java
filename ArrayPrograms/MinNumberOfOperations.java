@@ -14,7 +14,7 @@ public class MinNumberOfOperations{
     }
 
     public static void main(String[] args) {
-        int noOfSteps=getMinNumberOfSteps(2,5);
+        int noOfSteps=getMinNumberOfSteps(4,5);
         System.out.println(noOfSteps);
     }
 

@@ -28,7 +28,7 @@ public class RatInMaze{
     public static void main(String[] args) {
         int[][] input = {{1,0,0,0},
                         {1,1,0,1},
-                        {1,1,0,0},
+                        {0,1,0,0},
                         {0,1,1,1}};
         // String output="DRDDRR DDRDRR ";
         // if(output.equals(getMazeMovement(input))){

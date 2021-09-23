@@ -26,6 +26,7 @@ public class GroupAnagrams{
         int hascode=0;
         for (int i = 0; i < word.length(); i++) {
             hascode+=word.charAt(i);
+            System.out.println(hascode);
         }
         return hascode;
     }
