@@ -45,6 +45,5 @@ public class MaxWaterHistogram{
             result=result+Math.min(left_max[i],right_max[i])-input[i];
         }
         return result;
-
     }
 }
