@@ -25,7 +25,7 @@ public class MaxWaterHistogram{
         return result;
     }
 
-    //O(n)
+    //O(n) - used memoize
     private static int OptimizedMaxWater(int[] input) {
         int result=0;
         int []left_max = new int[input.length];
