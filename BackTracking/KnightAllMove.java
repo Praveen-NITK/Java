@@ -16,7 +16,7 @@ public class KnightAllMove{
         }
     }
 
-    static boolean solveKnightTour()
+    static void solveKnightTour()
     {
         int sol[][]= new int[N][N];
         //Arrays.fill(sol, -1);
@@ -25,22 +25,19 @@ public class KnightAllMove{
                 sol[i][j]=-1;
             }
         }
-        
-        int x_move[] = {2, 1, -1, -2, -2, -1, 1, 2}; 
-		int y_move[] = {1, 2, 2, 1, -1, -2, -2, -1}; 
 
         sol[0][0]=0;
 
-        if(!solveKTUtil(0,0,1,x_move,y_move,sol)){
+        if(!solveKTUtil(0,0,1,sol)){
             System.out.println("Solution does not exist");
-            return false;
         }else
             printSolution(sol);
-
-        return true;        
     }
 
-    private static boolean solveKTUtil(int x, int y, int moveId, int[] x_move, int[] y_move, int[][] sol) {
+    private static boolean solveKTUtil(int x, int y, int moveId, int[][] sol) {
+        int x_move[] = {2, 1, -1, -2, -2, -1, 1, 2};
+        int y_move[] = {1, 2, 2, 1, -1, -2, -2, -1};
+
         int next_x, next_y;
         //System.out.print(moveId+" ");
         if(moveId==N*N)
@@ -52,7 +49,7 @@ public class KnightAllMove{
 
             if(isSafeMove(next_x, next_y, sol)){
                 sol[next_x][next_y]=moveId;
-                if(solveKTUtil(next_x, next_y, moveId+1, x_move, y_move, sol)){
+                if(solveKTUtil(next_x, next_y, moveId+1, sol)){
                     return true;
                 }
                 else{

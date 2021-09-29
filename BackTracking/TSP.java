@@ -18,6 +18,7 @@ public class TSP{
                               int currentPos, int n, int count, int cost, int minimumCost) {
         //here visited is 1D  
         visited[currentPos]=true;
+        //we have visited all nodes and we have to go back to starting node
         if(count==n && graph[currentPos][0]>0){
             minimumCost=Math.min(minimumCost, cost+graph[currentPos][0]);
             return minimumCost;
@@ -25,7 +26,6 @@ public class TSP{
 
         for (int i = 0; i < n; i++) {
             if(!visited[i] && graph[currentPos][i]>0){
-                //visited[i]=true;
                 minimumCost=TSPUtil(graph, visited, i, n, count+1, cost+graph[currentPos][i], minimumCost);
 
                 //Draw tree of movement to understand better.
