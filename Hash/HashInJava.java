@@ -19,7 +19,16 @@ public class HashInJava{
         //createLinkedHashMap(arr);//Preserves the order
         //createConcurrentHashMap(arr);
         //createHashSet(arr);
-        createTreeSet();
+        //createTreeSet();
+        combineHashMap();
+    }
+
+    private static void combineHashMap() {
+        HashMap map=new HashMap();
+        map.put("data1","abc");
+        map.put("data2",100.0);
+
+        System.out.println(map.toString());
     }
 
     private static void createTreeSet() {

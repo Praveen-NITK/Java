@@ -24,4 +24,26 @@ public class MaxWaterHistogram{
         }
         return result;
     }
+
+    //O(n) - used memoize
+    private static int OptimizedMaxWater(int[] input) {
+        int result=0;
+        int []left_max = new int[input.length];
+        int []right_max = new int[input.length];
+
+        left_max[0]=input[0];
+        for (int i =1; i < input.length; i++) {
+            left_max[i]=Math.max(left_max[i-1],input[i]);
+        }
+
+        right_max[input.length-1]=input[input.length-1];
+        for (int i =input.length-2; i >=0; i--) {
+            right_max[i]=Math.max(right_max[i+1],input[i]);
+        }
+
+        for (int i = 0; i < input.length; i++) {
+            result=result+Math.min(left_max[i],right_max[i])-input[i];
+        }
+        return result;
+    }
 }

@@ -1,9 +1,8 @@
 package Anagrams;
-//No Broker dot com
 //https://www.geeksforgeeks.org/minimum-number-of-manipulations-required-to-make-two-strings-anagram-without-deletion-of-character/
 public class AnagramDifference{
     public static void main(String[] args) {
-        int diff=anagramDiff("cyb","act");
+        int diff=anagramDiff("cat","act");
         System.out.println(diff);
     }
 
@@ -18,7 +17,7 @@ public class AnagramDifference{
 
         //If char from string2 is not present in charCount []
         for (int i = 0; i < string2.length(); i++) {
-            if(charCount[string2.charAt(i)-'a']<=0)
+            if(--charCount[string2.charAt(i)-'a']<0)
                 count++;
         }
         return count;

@@ -41,12 +41,6 @@ public class BubbleSort{
         }
     }
 
-    private static void swap(int[] input, int j) {
-        int temp=input[j];
-        input[j]=input[j-1];
-        input[j-1]=temp;
-    }
-
     private static void bubbleSortRecursive(int []arr,int n){
         if(n<=0)
             return;
@@ -56,5 +50,11 @@ public class BubbleSort{
             }
         }
         bubbleSortRecursive(arr,n-1);        
+    }
+
+    private static void swap(int[] input, int j) {
+        int temp=input[j];
+        input[j]=input[j-1];
+        input[j-1]=temp;
     }
 }

@@ -14,24 +14,21 @@ public class MinNumberOfOperations{
     }
 
     public static void main(String[] args) {
-        int noOfSteps=getMinNumberOfSteps(2,5);
+        int noOfSteps=getMinNumberOfSteps(4,5);
         System.out.println(noOfSteps);
     }
 
     private static int getMinNumberOfSteps(int source, int target) {
-        //Set<Operation> visited= new HashSet<>();
         LinkedList<Operation> queue= new LinkedList<>();
 
         Operation op= new Operation(source, 0);
         queue.add(op);
-        //visited.add(op);
-        int count=0;
+        //int count=0;
         while(!queue.isEmpty()){
-            count++;
+            //count++;
             Operation temp= queue.poll();
-            //visited.add(temp);
             if(temp.val==target){
-                System.out.println("count -->"+count);
+                //System.out.println("count -->"+count);
                 return temp.steps;
             }
 
