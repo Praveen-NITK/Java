@@ -1,4 +1,4 @@
-//Find Lowest Comon Ancestor in BST
+//Find Lowest Common Ancestor in BST
 package BST;
 
 public class CommonAncestor{
@@ -14,13 +14,13 @@ public class CommonAncestor{
     public static void main(String[] args) {
         root= constructBst(root, 5);
         root= constructBst(root, 3);
-        root= constructBst(root, 8);
+        root= constructBst(root, 7);
         root= constructBst(root, 2);
         root= constructBst(root, 4);
         root= constructBst(root, 6);
-        root= constructBst(root, 6);
+        root= constructBst(root, 8);
 
-        Node lca=findLowestCommonAncestor(root,3,7);
+        Node lca=findLowestCommonAncestor(root,6,8);
         System.out.println(lca.data);
 
     }

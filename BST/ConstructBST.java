@@ -34,9 +34,13 @@ class ConstructBST{
 
     public static void main(String[] args) {
         ConstructBST cBST=new ConstructBST();
-        cBST.insert(50);
-        cBST.insert(30);
-        cBST.insert(60);
+        cBST.insert(5);
+        cBST.insert(3);
+        cBST.insert(2);
+        cBST.insert(4);
+        cBST.insert(7);
+        cBST.insert(6);
+        cBST.insert(8);
 
         inorder(cBST.root);
     }

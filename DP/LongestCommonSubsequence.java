@@ -46,8 +46,8 @@ public class LongestCommonSubsequence{
         for (int j = 0; j < n; j++) {
             lcs[0][j]=0;
         }
-        for (int i = 1; i < m; i++) {
-            for (int j = 1; j < n; j++) {
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
                 if(first.charAt(i-1)==second.charAt(j-1))
                     lcs[i][j]=1+ lcs[i-1][j-1];
                 else

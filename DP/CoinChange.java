@@ -24,15 +24,12 @@ public class CoinChange{
     }
 
     private static int getNoOfwaysRecursive(int[] coins, int m, int sum) {
-        if (sum == 0) 
-            return 1; 
-  
-        if (sum < 0) 
-            return 0; 
-
-        if (m <=0 && sum >= 1) 
-            return 0; 
-
+        if(m==0 || sum < 0)
+            return 0;
+        if(sum==0)
+            return 1;
+        if(coins[m-1]>sum)
+            return getNoOfwaysRecursive(coins, m-1,sum);
         // count is sum of solutions (i) excluding coins[m-1] (ii) including coins[m-1] 
         return getNoOfwaysRecursive( coins, m - 1, sum ) + getNoOfwaysRecursive( coins, m, sum-coins[m-1] ); 
     }

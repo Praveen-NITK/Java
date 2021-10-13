@@ -1,5 +1,6 @@
 package BST;
 //https://www.geeksforgeeks.org/merge-two-balanced-binary-search-trees/
+//Insert elements of the first tree to second
 public class MergeBST{
     static class Node{
         int data;

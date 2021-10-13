@@ -16,7 +16,7 @@ public class KnightMoves{
                                 {0,1,1,0}};
 
         
-        int numberOfMoves=conutPossibleMoves(arr,2,1);
+        int numberOfMoves=conutPossibleMoves(arr,1,0);
         System.out.println(numberOfMoves);
     }
 

@@ -9,10 +9,10 @@ public class Knapsack{
         int[] val=new int[]{10,20,30};
         int W=15;
         int n=val.length;
-        //int maxProfit=maximizeProfitRecursive(W,wt,val,n);
-        int maxProfDP= maximizeProfitDP(W, wt, val, n);
-        //System.out.println("maximum profit is: "+maxProfit);
-        System.out.println("Maximum profit through DP: "+maxProfDP);
+//        int maxProfit=maximizeProfitRecursive(W,wt,val,n);
+        int maxProfit= maximizeProfitDP(W, wt, val, n);
+        System.out.println("maximum profit is: "+maxProfit);
+//        System.out.println("Maximum profit through DP: "+maxProfDP);
     }
 
   
@@ -23,11 +23,13 @@ public class Knapsack{
             for (int j = 0; j <= W; j++) {
                 if(i==0||j==0)
                     aux[i][j]=0;
-                else if(wt[i-1]<=j){ //if last value is being taken or discarded
-                    aux[i][j]=Math.max(val[i-1]+aux[i-1][j-wt[i-1]], aux[i-1][j]);
-                }
-                else 
+                //if value is more than the required weight .. discard the value
+                else if(wt[i-1]>j)
                     aux[i][j]=aux[i-1][j];
+                //if last value is being taken or discarded
+                else
+                    aux[i][j]=Math.max(val[i-1]+aux[i-1][j-wt[i-1]], aux[i-1][j]);
+
             }
         }
         return aux[n][W];
@@ -39,6 +41,7 @@ public class Knapsack{
         if(wt[n-1]>W)
             return maximizeProfitRecursive(W, wt, val, n-1);
         else{
+            //Max of considering value or skipping that value
             return Math.max(val[n-1]+maximizeProfitRecursive(W-wt[n-1], wt, val, n-1), maximizeProfitRecursive(W, wt, val, n-1));
         }
     }
