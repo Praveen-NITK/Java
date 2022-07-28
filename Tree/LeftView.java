@@ -34,7 +34,6 @@ public class LeftView{
             depth=currnodeHeight;
         }
         getLeftView(root.left);
-        getLeftView(root.left);
     }
 
     private static int getHeight(Node root) {

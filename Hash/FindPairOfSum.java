@@ -5,7 +5,7 @@ import java.util.Hashtable;
 
 public class FindPairOfSum{
     public static void main(String[] args) {
-        int []arr= new int[]{2,1,6,7,10};
+        int []arr= new int[]{2,1,8,7,10};
         boolean ispairExists= isPairOfSumExists(arr,10);
         System.out.println(ispairExists);
     }

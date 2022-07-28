@@ -21,17 +21,19 @@ public class ZigZagTraversal{
         root.left.right=new Node(5);
         root.right.left=new Node(6);
         root.right.right=new Node(7);
+        root.left.right.left=new Node(8);
+        root.left.right.right=new Node(9);
 
-        // int height=getHeight(root);
+         int height=getHeight(root);
 
-        // for (int i = 0; i < height; i++) {
-        //     if(i%2==0)
-        //         printZigZagLevel(root,i,true);
-        //     else
-        //         printZigZagLevel(root,i,false);
-        // }
+         for (int i = 0; i < height; i++) {
+             if(i%2==0)
+                 printZigZagLevel(root,i,true);
+             else
+                 printZigZagLevel(root,i,false);
+         }
 
-        printZigZagIterative(root);
+//        printZigZagIterative(root);
         
     }
 

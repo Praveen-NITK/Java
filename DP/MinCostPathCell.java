@@ -3,7 +3,10 @@ package DP;
 public class MinCostPathCell{
     static int [][]Mem= new int[3][4];
     public static void main(String[] args) {
-        int [][]cost={{1,3,5,8},{4,2,1,7},{4,3,2,3}};
+        int [][]cost={  {1,3,5,8},
+                        {4,2,1,7},
+                        {4,3,2,3}
+                    };
 
         System.out.println(findMinCost(cost,2,3));
         System.out.println(findMinCostMemoized(cost,2,3));

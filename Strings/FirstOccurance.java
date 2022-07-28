@@ -1,5 +1,8 @@
 package Strings;
 
+/**
+ * Its also called as pattern matching algorithm
+ */
 public class FirstOccurance {
     public static void main(String[] args) {
         String large= "yellowish red is red";
@@ -16,7 +19,6 @@ public class FirstOccurance {
             if(j==small.length())
                 return i;
         }
-
         return -1;
     }
 }

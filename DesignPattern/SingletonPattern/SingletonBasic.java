@@ -2,6 +2,7 @@ package DesignPattern.SingletonPattern;
 public class SingletonBasic{
     private static SingletonBasic singletonInstance;
     private String instanceName;
+
     private SingletonBasic(){}
 
     public static SingletonBasic getInstance(){

@@ -17,14 +17,14 @@ public class MinPlatform{
         while(i<arrival.length && j<departure.length){
             if(arrival[i]<departure[j]){
                 platforms=platforms+1;
-                if(platforms>result)
-                    result=platforms;
                 i++;
             }
             else{
                 platforms=platforms-1;
                 j++;
             }
+            if(platforms>result)
+                result=platforms;
         }
         
         return result;

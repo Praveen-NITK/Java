@@ -1,5 +1,5 @@
 package Tree;
-//Example 7.2 in Synamic programming book amazon.
+//Example 7.2 in Dynamic programming book amazon.
 public class FindSumNode{
     static class Tree{
         int data;

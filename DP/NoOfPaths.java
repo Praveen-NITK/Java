@@ -1,9 +1,9 @@
 package DP;
 public class NoOfPaths{
     public static void main(String[] args) {
-        int [][] matrix= new int[500][600];
+        int [][] matrix= new int[5][6];
         //System.out.println(findNoOfPaths(matrix,20,20));
-        System.out.println(findNoOfPathsDP(matrix,20,20));
+        System.out.println(findNoOfPathsDP(matrix,2,2));
     }
 
     private static int findNoOfPaths(int[][] matrix,int m, int n) {

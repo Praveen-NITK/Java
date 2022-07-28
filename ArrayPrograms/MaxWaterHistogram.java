@@ -2,8 +2,9 @@
 package ArrayPrograms;
 public class MaxWaterHistogram{
     public static void main(String[] args) {
-        int input[] = {4, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 4};
-        System.out.println(maxWater(input));
+        //int input[] = {4, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 4};
+        int input[] = {4, 1, 0, 2, 1, 0, 1, 3};
+        System.out.println(OptimizedMaxWater(input));
     }
 
     //O(n^2)

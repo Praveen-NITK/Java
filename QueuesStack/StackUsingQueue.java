@@ -1,4 +1,4 @@
-package Queues;
+package QueuesStack;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -30,9 +30,11 @@ public class StackUsingQueue{
             System.out.println(ex.getMessage());
         }
     }
+    //q1 for push
+    //q1 for pop
     
     private int pop() throws Exception{
-        
+        //Swapping q1 with q2
         if(q1.isEmpty() && !q2.isEmpty()){
             Queue<Integer> temp;
             temp=q1;
@@ -48,6 +50,7 @@ public class StackUsingQueue{
     }
 
     private void push(int i) {
+        //Before pushing makes sure that all previous elements are in q1 itself
         while(!q2.isEmpty()){
             q1.add(q2.poll());
         }

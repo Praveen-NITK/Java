@@ -2,7 +2,7 @@ package Sortings;
 
 import java.util.Arrays;
 
-public class BubbleSort{
+public class  BubbleSort{
     public static void main(String[] args) {
         int[] arr={2,78,45,454,25,434,45,23,54};
         //bubbleSortWithWhile(arr);

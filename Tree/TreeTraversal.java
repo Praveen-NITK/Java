@@ -1,8 +1,6 @@
 package Tree;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class TreeTraversal {
     static class TreeNode {
@@ -17,12 +15,17 @@ public class TreeTraversal {
         root.right= new TreeNode(22);
         root.left.left=new TreeNode(1);
         root.left.right= new TreeNode(7);
+        root.left.right.left= new TreeNode(6);
+        root.left.right.right= new TreeNode(8);
         root.right.left= new TreeNode(12);
         root.right.right= new TreeNode(25);
-        List<Integer> output= preorderTraversalIterative(root);
+        //List<Integer> output= preorderTraversalIterative(root);
+//        List<Integer> output= breadthFirstTraversal(root);
         //List<Integer> output= postTraversalIterative(root);
         //List<Integer> output=iterativeInOrder(root);
-        System.out.println(output);
+//        System.out.println(output.toString());
+        printPreOrderWithIndentation(root,0);
+        printPreOrderWithIndentationAndLabel(root,new ArrayList<Integer>());
     }
 
     public static List<Integer> preorderTraversalIterative(TreeNode root) {
@@ -83,5 +86,78 @@ public class TreeTraversal {
             current=current.right;            
         }   
         return output;
+    }
+
+    private static List<Integer> breadthFirstTraversal(TreeNode root){
+        Queue<TreeNode> queue=new LinkedList<>();
+        List<Integer> output= new ArrayList<>();
+        if(root!=null)
+            queue.add(root);
+        while (!queue.isEmpty())
+        {
+            TreeNode current= queue.poll();
+            if(current!=null) {
+                output.add(current.val);
+                queue.add(current.left);
+                queue.add(current.right);
+            }
+        }
+        return output;
+    }
+
+    /**
+     * 10
+     *   5
+     *     1
+     *     7
+     *   22
+     *     12
+     *     25
+     * @param root
+     * @param d
+     */
+    private static void printPreOrderWithIndentation(TreeNode root, int d){
+        if(root!=null){
+            System.out.println(spaces(2*d)+root.val);
+            printPreOrderWithIndentation(root.left,d+1);
+            printPreOrderWithIndentation(root.right,d+1);
+        }
+    }
+
+    private static String spaces(int i) {
+        StringBuilder space= new StringBuilder();
+        for (int j = 0; j <i; j++) {
+            space.append(" ");
+        }
+        return space.toString();
+    }
+
+    /**
+     * 10
+     *   1 - 5
+     *     1.1 - 1
+     *     1.2 - 7
+     *   2 - 22
+     *     2.1 - 12
+     *     2.2 - 25
+     * @param root
+     * @param path
+     */
+    private static void printPreOrderWithIndentationAndLabel(TreeNode root, ArrayList<Integer> path){
+        if(root!=null){
+            int d=path.size();
+            System.out.print(spaces(2*d));
+            for (int i = 0; i <d ; i++) {
+                System.out.print(path.get(i)+(i==d-1?" - ":"."));
+            }
+            System.out.println(root.val);
+            path.add(1);
+
+            printPreOrderWithIndentationAndLabel(root.left,path);
+            path.set(d,1+path.get(d));
+            printPreOrderWithIndentationAndLabel(root.right,path);
+            path.remove(d);
+
+        }
     }
 }

@@ -32,19 +32,12 @@ public class WidthOfTree{
 
     }
 
-    // static class Width{
-    //     static int minVal=0;
-    //     static int maxVal=0;
-    // }
-    // Width w= new Width();
     private static void getWidth(Node root, Set<Integer> set, int curr) {
         if(root==null)
             return;
 
         getWidth(root.left, set, curr-1);
-
         set.add(curr);
-        
         getWidth(root.right, set,curr+1);
         
     }

@@ -2,10 +2,11 @@ package DP;
 public class MaxSumSubArray{
     public static void main(String[] args) {        
         int []input= new int[]{-2,-3,4,-1,2,-3,5,-2,1};
-        System.out.println(getMaximumSumSubArrayBF(input));
-
-        System.out.println(getMaximumSumSubArray(input));
-        System.out.println(getMaximumSumSubArrayRecursive(input,input.length-1));
+//        System.out.println(getMaximumSumSubArrayBF(input));
+//
+//        System.out.println(getMaximumSumSubArray(input));
+//        System.out.println(getMaximumSumSubArrayRecursive(input,input.length-1));
+        printIndex(input);
     }
 
     private static int getMaximumSumSubArrayBF(int[] input) {
@@ -36,6 +37,27 @@ public class MaxSumSubArray{
         return maxSumSoFar;
     }
 
+    private static void printIndex(int []input){
+        int tempSum=0;
+        int maxSum=0;
+        int start=0;
+        int end=0;
+        for (int i = 0; i < input.length; i++) {
+            tempSum=input[i];
+            for (int j = i+1; j <input.length ; j++) {
+                tempSum+=input[j];
+                if(tempSum>maxSum){
+                    maxSum=tempSum;
+                    start=i;
+                    end=j;
+                }
+            }
+        }
+        System.out.println(maxSum);
+        System.out.println("index:"+start+"to"+end);
+    }
+
+    //Non working
     private static int getMaximumSumSubArrayRecursive(int[] input, int n){
         if(n==0)
             return Math.max(input[n],0);

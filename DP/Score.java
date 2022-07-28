@@ -57,7 +57,7 @@ public class Score{
         }
 
         //Same as coin change
-        // for (int j = 1; j < score.length; j++) {
+        // for (int j = 1; j < score; j++) {
         //     for (int scr : scoreType){
         //         if(j>=scr)
         //             score[j]+=score[j-scr];
