@@ -13,6 +13,12 @@ public class Permutation {
         System.out.println(res); //[[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]
     }
 
+    /**
+     * O (N!)
+     * Because exhaustion of the entire decision tree is unavoidable. This is also a feature of backtracking.
+     * Unlike dynamic programming having overlapping subproblems which can be optimized,
+     * backtracking is purely violent exhaustion, and time complexity is generally high.
+     */
     private static void backtrack(int[] input, LinkedList<Integer> path) {
         if(path.size()==input.length){
             res.add(new LinkedList<>(path));
