@@ -38,13 +38,13 @@ public class SwapObjects {
         System.out.println("emp2.name "+emp2.name);
     }
 
-    private static void swap(Employee e1, Employee e2) {
+    private static void swapEmployeeObjs(Employee e1, Employee e2) {
         Employee temp=e1;
         e1=e2;
         e2=temp;
     }
 
-    private static void swap(Employee e1, Employee e2) {
+    private static void swapEmployeeName(Employee e1, Employee e2) {
         String temp=e1.getName();
         e1.setName(e2.getName());
         e2.setName(temp);

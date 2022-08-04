@@ -1,5 +1,7 @@
 package DP;
 //https://www.geeksforgeeks.org/coin-change-dp-7/
+
+//https://github.com/labuladong/fucking-algorithm/blob/english/dynamic_programming/AnalysisOfDynamicProgramming.md
 public class CoinChange{
     public static void main(String[] args) {
         int sum=6;
