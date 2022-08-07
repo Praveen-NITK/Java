@@ -1,27 +1,40 @@
 package DP;
 public class WordEditDistance{
+    static String first="abb";
+    static String second="bbc";
     public static void main(String[] args) {
-        String first="abb";
-        String second="bbc";
 
-        System.out.println(getWordsEditDistance(first,second));
+
         System.out.println(getWordsEditDistanceDP(first,second));
+        System.out.println(getMinEditDistance(first.length()-1,second.length()-1));
     }
 
-    private static int getWordsEditDistance(String first, String second) {
-        if(first.isEmpty() && !second.isEmpty())
-            return second.length();
-        if(!first.isEmpty() && second.isEmpty())
-            return first.length();
-        if(first.isEmpty() && second.isEmpty())
-            return 0;
-        if(first.charAt(0)==second.charAt(0))
-            return getWordsEditDistance(first.substring(1), second.substring(1));
-        else{
-            int d=getWordsEditDistance(first.substring(1), second); //delete from first
-            int i=getWordsEditDistance(first, second.substring(1)); //insert in second
-            int u=getWordsEditDistance(first.substring(1), second.substring(1)); //update in second
-            return Math.min(Math.min(d, i),u)+1;
+    /**
+     * For each pair
+     * if s1[i] == s2[j]:
+     *     skip
+     *     i, j move forward
+     * else:
+     *     chose：
+     *         insert
+     *         delete
+     *         replace
+     * @param i
+     * @param j
+     * @return
+     */
+
+    private static int getMinEditDistance(int i, int j){
+        if(i==-1) return j+1;
+        if(j==-1) return i+1;
+        if(first.charAt(i)==second.charAt(j))
+            return getMinEditDistance(i-1,j-1); //Skip case
+        else {
+            return Math.min(Math.min(
+                    getMinEditDistance(i,j-1)+1, //Inset
+                    getMinEditDistance(i-1,j)+1), //Delete
+                    getMinEditDistance(i-1,j-1)+1 //Replace
+            );
         }
     }
 
