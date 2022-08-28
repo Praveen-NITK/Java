@@ -19,8 +19,8 @@ public class BFSApplication{
                                 {0,0,0,1,1,0,1,0}};
 
 
-        BFSTraversal(arr,2);  //2-->1-->0-->3-->4-->7-->5-->6
-        //printShortestPath(arr,0,7);
+//        BFSTraversal(arr,2);  //2-->1-->0-->3-->4-->7-->5-->6
+        printShortestPath(arr,0,7);
         //int minNodeCount=minNumberOfNodes(arr,2,6);
         //System.out.println("minNodeCount "+minNodeCount);
     }
@@ -97,18 +97,18 @@ public class BFSApplication{
             return;
         }
         while(arr[src][dest]!=1){
-        for(int i=0;i<8;i++){
-            if(arr[src][i]==1 && !visited[i]){
-                predecessorNode[i]=src;               
-                visited[i]=true;
-                src=i;
-                //neib.add(i);
+            for(int i=0;i<8;i++){
+                if(arr[src][i]==1 && !visited[i]){
+                    predecessorNode[i]=src;
+                    visited[i]=true;
+                    src=i;
+                    //neib.add(i);
                 
-            }else if(i==7){
-                src=predecessorNode[src];
-            }           
+                }else if(i==7){
+                    src=predecessorNode[src];
+                }
+            }
         }
-    }
         if(!neib.isEmpty()){
             printShortestPath(arr, src, dest);
         }

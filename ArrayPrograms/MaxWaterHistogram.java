@@ -3,8 +3,11 @@ package ArrayPrograms;
 public class MaxWaterHistogram{
     public static void main(String[] args) {
         //int input[] = {4, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 4};
-        int input[] = {4, 1, 0, 2, 1, 0, 1, 3};
+//        int input[] = {4, 1, 0, 2, 1, 0, 1, 3};
+        int input[] = {1,8,6,2,5,4,8,3,7};
+        System.out.println(maxWater(input));
         System.out.println(OptimizedMaxWater(input));
+        System.out.println(trap(input));
     }
 
     //O(n^2)
@@ -46,5 +49,31 @@ public class MaxWaterHistogram{
             result=result+Math.min(left_max[i],right_max[i])-input[i];
         }
         return result;
+    }
+
+    //https://labuladong.gitbook.io/algo-en/iv.-high-frequency-interview-problem/trapping_rain_water
+    private static int trap(int[] input) {
+        if (input.length==0) return 0;
+        int n = input.length;
+        int left = 0, right = n - 1;
+        int ans = 0;
+
+        int l_max = input[0];
+        int r_max = input[n - 1];
+
+        while (left <= right) {
+            l_max = Math.max(l_max, input[left]);
+            r_max = Math.max(r_max, input[right]);
+
+            // ans += min(l_max, r_max) - input[i]
+            if (l_max < r_max) {
+                ans += l_max - input[left];
+                left++;
+            } else {
+                ans += r_max - input[right];
+                right--;
+            }
+        }
+        return ans;
     }
 }

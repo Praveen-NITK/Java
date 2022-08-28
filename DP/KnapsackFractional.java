@@ -34,8 +34,7 @@ public class  KnapsackFractional{
 
         Arrays.sort(ival, new Comparator<ItemValue>() {
             @Override
-            public int compare(ItemValue o1, ItemValue o2)
-            {
+            public int compare(ItemValue o1, ItemValue o2) {
                 return o2.cost.compareTo(o1.cost);
             }
         });

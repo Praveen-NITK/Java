@@ -2,6 +2,9 @@ package DP;
 
 import java.util.Arrays;
 
+/**
+ * at least  how many COINS are needed to scrape up this amount, if it is impossible, the algorithm returns -1.
+ */
 public class MinCoinChange {
     static  int[] coins={2,3,5};
 

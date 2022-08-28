@@ -43,9 +43,6 @@ public class TopologicalSort {
         while(!st.isEmpty()){
             System.out.println(st.pop());
         }
-        // for (Integer integer : st) {
-        //     System.out.println(integer + " ");
-        // }
     }
 
     public static void main(String[] args) {

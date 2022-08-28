@@ -5,8 +5,8 @@ package Heap;
 import java.util.*; 
 
 class PriorityQ { 
-	public static void main(String args[]) 
-	{ 
+	public static void main(String args[])
+	{
 		// Creating empty priority queue 
 		PriorityQueue<Integer> pQueue = 
 			new PriorityQueue<Integer>(Collections.reverseOrder()); 
@@ -25,7 +25,8 @@ class PriorityQ {
 		System.out.println("The queue elements:"); 
 		Iterator itr = pQueue.iterator(); 
 		while (itr.hasNext()) 
-			System.out.println(itr.next()); 
+			System.out.println(itr.next());
+
 
 		// Removing the top priority element (or head) and 
 		// printing the modified pQueue using poll() 

@@ -4,8 +4,8 @@ import LinkedLists.CreateLL.Node;
 
 public class ReverseLL{
     public static void main(String[] args) {
-        //Node head= reverseLL(LinkedLists.CreateLL.createLL());        
-        //LinkedLists.CreateLL.printLL(head);       
+        Node head= reverseLL(LinkedLists.CreateLL.createLL());
+        LinkedLists.CreateLL.printLL(head);
 
         Node reversed=recursiveReverse(LinkedLists.CreateLL.createLL(),null);
         LinkedLists.CreateLL.printLL(reversed);
@@ -13,17 +13,14 @@ public class ReverseLL{
 
     private static Node reverseLL(Node head) {
         Node prev=null;
-        Node current=head;
-        Node next=null;
 
-        while(current!=null){
-            next=current.next;
-            current.next=prev;
-            prev=current;
-            current=next;
+        while(head!=null){
+            Node next=head.next;
+            head.next=prev;
+            prev=head;
+            head=next;
         }
-        head=prev;
-        return head;
+        return prev;
     }
 
     static Node head=null;    

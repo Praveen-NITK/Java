@@ -27,7 +27,6 @@ public class HashInJava{
         HashMap map=new HashMap();
         map.put("data1","abc");
         map.put("data2",100.0);
-
         System.out.println(map.toString());
     }
 

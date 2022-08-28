@@ -1,6 +1,6 @@
 package Tree;
 
-//https://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
+//https://labuladong.gitbook.io/algo-en/ii.-data-structure/framework-and-thoughts-about-learning-data-structure-and-algorithm
 public class BuildFromInorderPreorder{
     static class Node{
         char data;
@@ -16,8 +16,7 @@ public class BuildFromInorderPreorder{
     public static void main(String[] args) {
         char []inOrder=new char[]{'D','B','E','A','F','C'};
         char []preOrder=new char[]{'A','B','D','E','C','F'};
-        int len=inOrder.length;
-        Node root=buildTree(inOrder,preOrder,0,len-1);
+        Node root=constructTree(inOrder, 0,inOrder.length-1,preOrder,0,preOrder.length-1);
         System.out.println("Inorder of constructed tree is ");
         printInorder(root);
     }
@@ -30,23 +29,15 @@ public class BuildFromInorderPreorder{
         printInorder(root.right);
     }
 
-    private static Node buildTree(char[] inOrder, char[] preOrder, int instart, int inend) {
-        if(instart>inend)
-            return null;       
-        
-        Node tnode=new Node(preOrder[preIndex++]);
-
-        if(instart==inend)
-            return tnode;
-
-        int inIndex=getPosition(inOrder,tnode.data,instart,inend);
-        //node.left=buildTree(Arrays.asList(inOrder).subList(0, indexInOrder).toArray(new Character[0]), Arrays.asList(preOrder).subList(1, preOrder.length+1).toArray(new Character[0]));
-        //node.right=buildTree(Arrays.asList(inOrder).subList(indexInOrder+1,inOrder.length).toArray(new Character[0]), Arrays.asList(preOrder).subList(1, preOrder.length+1).toArray(new Character[0]));
-
-        tnode.left=buildTree(inOrder, preOrder, instart, inIndex-1);
-        tnode.right=buildTree(inOrder, preOrder, inIndex+1, inend);
-
-        return tnode;
+    private static Node constructTree(char[] inOrder, int inStart, int inEnd,char[] preOrder, int preStart, int preEnd){
+        if(inStart>inEnd || preStart>preEnd)
+            return null;
+        Node root=new Node(preOrder[preStart]);
+        int inRoot=getPosition(inOrder, root.data, inStart,inEnd);
+        int numsLeft=inRoot-inStart;
+        root.left=constructTree(inOrder, inStart,inRoot-1,preOrder,preStart+1,preStart+numsLeft);
+        root.right=constructTree(inOrder, inRoot+1,inEnd,preOrder,preStart+numsLeft+1,preEnd);
+        return root;
     }
 
     private static int getPosition(char[] inOrder, char key, int start, int end) {
