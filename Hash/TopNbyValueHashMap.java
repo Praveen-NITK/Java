@@ -3,7 +3,8 @@ package Hash;
 import java.util.*;
 
 /**
- * print name of top n students having score in descending order
+ * print name of top n students having higher score in descending order
+ * [("ram",4),("raj",5),("kishore",2)]
  * Asked in Google
  */
 public class TopNbyValueHashMap {
