@@ -1,0 +1,29 @@
+Question
+
+
+Feature Requirement:
+
+PG should support onboarding multiple clients.
+PG should have multiple bank integrations ( like HDFC, ICICI, SBI etc )
+PG should have facility to support different payment methods - UPI, Credit / Debit Card, Netbanking etc
+PG should have facility to divert to specific bank based on certain criteria - a router basically - (for e.g. all credit card transaction goes to HDFC and netbanking is redirected to ICICI )
+PG should have facility to allocate specific percentage between different banks - say bank1 takes 30% of total traffic while remaining 70% go to bank2
+Clients should have an option to opt for specific payment methods. - only UPI, everything except netbanking etc
+
+Requirements - below are various functions that should be supported with necessary parameters passed
+
+addClient() - add a client in PG
+removeClinet() - remove client from PG
+hasClient() - does a client exist in the PG?
+listSupportedPaymodes() - show paymodes support by PG. if a client is passed as parameter, all supported paymodes for the clients should be shown.
+addSupportForPaymode() - add paymodes support in the PG. If a client is passed as parameter, add paymode for the clients.
+removePaymode() - remove paymode ( both from PG or client basis parameter)
+showDistribution() - show active distribution percentage of router
+makePayment( //necessary payment details )
+Evaluation criteria:
+
+Extension problem:
+
+Can a router dynamically switch the traffic basis success percentage of Bank?
+Can the router switch based on payment instruments as well instead of just Bank?
+[execution time limit] 3 seconds (java)

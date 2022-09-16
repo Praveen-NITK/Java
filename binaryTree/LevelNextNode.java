@@ -57,6 +57,8 @@ public class LevelNextNode {
 
         while (!q.isEmpty()){
             int size=q.size();
+
+            //another loop to traverse till level only
             while(size-->0) {
                 current = q.poll();
                 if (current.data == node.data) {
