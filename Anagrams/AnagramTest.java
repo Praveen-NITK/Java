@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class AnagramTest {
     public static void main(String[] args) {
-        boolean isAnagram=checkIfAnagram("aabb","baba");
+        boolean isAnagram=checkIfAnagram("aaba","baba");
         System.out.println("Both words are anagrams: "+ isAnagram);
     }
 
-    private static boolean checkIfAnagram(String word1,String word2){
+    protected static boolean checkIfAnagram(String word1,String word2){
         if(word1.length()!=word2.length())
             return false;
         int []placeHolder=new int[26];

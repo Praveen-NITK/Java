@@ -1,33 +1,32 @@
 //https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/
 package Anagrams;
 
-import java.util.HashMap;
+import java.util.*;
 
 public class GroupAnagrams{
     public static void main(String[] args) {
         String []wordList={"cat", "dog", "tac", "god", "act"};
-        printGroupedAnagrams(wordList);
+        groupAnagram(wordList);
     }
 
-    //Failsfor "aabbca","babbab" with hashcode method
-    private static void printGroupedAnagrams(String[] wordList) {
-        HashMap<Integer,String> hm= new HashMap<>();
-        for (String word : wordList) {
-            if(hm.containsKey(getHashCode(word)))
-                hm.put(getHashCode(word),  hm.get(getHashCode(word))+" "+word);
-            else{
-                hm.put(getHashCode(word),  word);
+    private static void groupAnagram(String[] wordList) {
+        HashMap<String,List<String>> anagramGroup = new HashMap<>();
+        for (int i = 0; i < wordList.length; i++) {
+
+            String word = wordList[i];
+            char[] letters = word.toCharArray();
+            Arrays.sort(letters);
+            String newWord = new String(letters);
+
+            if(anagramGroup.containsKey(newWord)){
+                anagramGroup.get(newWord).add(word);
+            }
+            else {
+                List<String> words = new ArrayList<>();
+                words.add(word);
+                anagramGroup.put(newWord,words);
             }
         }
-        System.out.println(hm);
-    }
-
-    private static int getHashCode(String word) {
-        int hascode=0;
-        for (int i = 0; i < word.length(); i++) {
-            hascode+=word.charAt(i);
-            System.out.println(hascode);
-        }
-        return hascode;
+        System.out.println(anagramGroup.values());
     }
 }
