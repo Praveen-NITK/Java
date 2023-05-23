@@ -2,7 +2,7 @@ package Anagrams;
 //https://www.geeksforgeeks.org/minimum-number-of-manipulations-required-to-make-two-strings-anagram-without-deletion-of-character/
 public class AnagramDifference{
     public static void main(String[] args) {
-        int diff=anagramDiff("cat","act");
+        int diff=anagramDiff("cat","abt");
         System.out.println(diff);
     }
 

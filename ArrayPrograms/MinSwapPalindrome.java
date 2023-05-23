@@ -5,6 +5,7 @@ public class MinSwapPalindrome {
     public static void main(String[] args) {
 //        String s= "1100001";
         String s= "11100010";
+        //1110 0010
         int minSwap=findMinSwap(s.toCharArray());
         System.out.println(minSwap);
     }

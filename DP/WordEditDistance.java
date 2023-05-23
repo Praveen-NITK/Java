@@ -16,8 +16,8 @@ public class WordEditDistance{
      *     i, j move forward
      * else:
      *     chose：
-     *         insert
-     *         delete
+     *         enqueue
+     *         dequeue
      *         replace
      * @param i
      * @param j

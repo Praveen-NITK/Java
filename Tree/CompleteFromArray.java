@@ -15,7 +15,7 @@ public class CompleteFromArray{
 
     static Node root;
     public static void main(String[] args) {
-        int[] treeData=new int[]{10,12,15,25,30,36};
+        int[] treeData = new int[]{10,12,15,25,30,36};
 
         root=new Node(treeData[0]);
         Node troot= completeTreeFromArray(treeData, root, 0, treeData.length-1);

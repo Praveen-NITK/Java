@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class  BubbleSort{
     public static void main(String[] args) {
-        int[] arr={2,78,45,454,25,434,45,23,54};
+        int[] arr={2,7,4,45,25,34,5,23,54};
         //bubbleSortWithWhile(arr);
         bubbleSortFor(arr);
 //        bubbleSortRecursive(arr, arr.length);

@@ -15,7 +15,9 @@ public class MinNumberOfOperations{
 
     public static void main(String[] args) {
         int noOfSteps=getMinNumberOfSteps(4,5);
+        int noOfStepsR=getMinNumberOfStepsRecursive(4,7);
         System.out.println(noOfSteps);
+        System.out.println(noOfStepsR);
     }
 
     private static int getMinNumberOfSteps(int source, int target) {
@@ -48,20 +50,17 @@ public class MinNumberOfOperations{
         return -1;
     }
 
-    public static void minNoOperation() {
-        int x=0;
-        int y=5;
-        int count=0;
-        while(x<y){
-            x=x*2;
-            count++;
-        }
-        while(x>y){
-            x--;
-            count++;
-        }
+    private static int getMinNumberOfStepsRecursive(int source, int target) {
+        if(source==target)
+            return 0;
+        if(source>target)
+            return source-target;
 
-        System.out.println(count);
+        // If target is odd
+        if(target%2!=0)
+            return 1+getMinNumberOfStepsRecursive(source,target+1);
+        //If target is even
+        else
+            return 1+getMinNumberOfStepsRecursive(source,target/2);
     }
-
 }

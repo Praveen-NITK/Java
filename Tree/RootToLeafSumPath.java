@@ -17,7 +17,7 @@ public class RootToLeafSumPath{
         root.right.left= new Tree(7);
         root.right.right= new Tree(4);
 
-        boolean result=isPathExistOfSumRecursive(26,root);
+        boolean result=isPathExistOfSumRecursive(27,root);
         System.out.println(result);
 
 }

@@ -2,10 +2,10 @@ package Stacks;
 
 import java.util.LinkedList;
 
-public class LinkedLinkBasedStack<E> implements Stack<E> {
+public class LinkedListBasedStack<E> implements Stack<E> {
     int t=-1;
     LinkedList<E> data;
-    public LinkedLinkBasedStack(){
+    public LinkedListBasedStack(){
         data=new LinkedList<E>();
     }
 
@@ -38,7 +38,7 @@ public class LinkedLinkBasedStack<E> implements Stack<E> {
     }
 
     public static void main(String[] args) {
-        LinkedLinkBasedStack<Integer> st2 = new LinkedLinkBasedStack<>();
+        LinkedListBasedStack<Integer> st2 = new LinkedListBasedStack<>();
         st2.push(4);
         st2.push(3);
         System.out.println(st2.pop());

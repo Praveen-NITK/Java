@@ -8,6 +8,7 @@ public class MaxWaterHistogram{
         System.out.println(maxWater(input));
         System.out.println(OptimizedMaxWater(input));
         System.out.println(trap(input));
+        System.out.println(waterStore(input));
     }
 
     //O(n^2)
@@ -54,12 +55,12 @@ public class MaxWaterHistogram{
     //https://labuladong.gitbook.io/algo-en/iv.-high-frequency-interview-problem/trapping_rain_water
     private static int trap(int[] input) {
         if (input.length==0) return 0;
-        int n = input.length;
-        int left = 0, right = n - 1;
+
+        int left = 0, right = input.length - 1;
         int ans = 0;
 
-        int l_max = input[0];
-        int r_max = input[n - 1];
+        int l_max = input[left];
+        int r_max = input[right];
 
         while (left <= right) {
             l_max = Math.max(l_max, input[left]);
@@ -75,5 +76,31 @@ public class MaxWaterHistogram{
             }
         }
         return ans;
+    }
+
+    private static int waterStore(int[] input){
+        //Result
+        int result=0;
+
+        //Two pointers left and right
+        int left=0,right=input.length-1;
+
+        // LeftMax and rightMax values
+        int left_max=input[left];
+        int right_max=input[right];
+
+        while(left<=right){
+            left_max=Math.max(left_max,input[left]);
+            right_max=Math.max(right_max,input[right]);
+            if(left_max<right_max){
+                result+=left_max-input[left];
+                left++;
+            }
+            else {
+                result+=right_max-input[right];
+                right--;
+            }
+        }
+        return result;
     }
 }

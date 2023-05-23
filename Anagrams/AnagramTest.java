@@ -4,8 +4,10 @@ import java.util.Arrays;
 
 public class AnagramTest {
     public static void main(String[] args) {
-        boolean isAnagram=checkIfAnagram("aaba","baba");
+        boolean isAnagram=checkIfAnagram("baba","baba");
+        boolean isAnagram1=checkIfAnagramWithSort("baba","baba");
         System.out.println("Both words are anagrams: "+ isAnagram);
+        System.out.println("Both words are anagrams: "+ isAnagram1);
     }
 
     protected static boolean checkIfAnagram(String word1,String word2){
@@ -21,5 +23,16 @@ public class AnagramTest {
                 return false;
         }
         return true;
+    }
+
+    //O(NlogN)
+    protected static boolean checkIfAnagramWithSort(String word1,String word2){
+        if(word1.length()!=word2.length())
+            return false;
+        char []wordChar1=word1.toCharArray();
+        char []wordChar2=word2.toCharArray();
+        Arrays.sort(wordChar1);
+        Arrays.sort(wordChar2);
+        return String.valueOf(wordChar1).equals(String.valueOf(wordChar2));
     }
 }

@@ -30,10 +30,11 @@ public class DisjointSets {
     private static boolean isDisjointOptimised(int[] a, int[] b, int[] c) {
         for (int i:a){
             for (int j:b){
-                if(i==j)
-                for (int k:c){
-                    if((i==k))
-                        return false;
+                if(i==j) {
+                    for (int k : c) {
+                        if ((i == k))
+                            return false;
+                    }
                 }
             }
         }

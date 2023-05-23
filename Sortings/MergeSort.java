@@ -4,8 +4,7 @@ import java.util.*;
 public class MergeSort{
     public static void main(String[] args) {
         Integer arr[]=new Integer[] {7,8,4,6,8,2,1,4,6,9};
-        List<Integer> listToSort= new ArrayList<Integer>();
-        listToSort.addAll(Arrays.asList(arr));
+        List<Integer> listToSort= Arrays.asList(arr);
 
         for(Integer data:mergeSort(listToSort)){
             System.out.println(data);

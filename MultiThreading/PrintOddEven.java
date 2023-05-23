@@ -1,7 +1,9 @@
 package MultiThreading;
 ////https://www.geeksforgeeks.org/inter-thread-communication-java/
 public class PrintOddEven{
+    static int N;
     public static void main(String[] args) throws InterruptedException{
+        N=20;
         final PC pc = new PC();
 
         Thread t1= new Thread(new Runnable(){        
@@ -32,25 +34,28 @@ public class PrintOddEven{
     }
 
     public static class PC{
-        int N=20;
+
+        int counter=1;
         void printEven() throws InterruptedException{
             synchronized(this){      
                 notify();               
-                for (int i = 0; i < N; i++) {
-                    if(i%2==0)
-                        System.out.println("Even "+i);
-                    wait();
+                while(counter<N){
+                    if(counter%2==1)
+                        wait();
+                    System.out.println("Even "+counter);
+                    counter++;
                     notify();
                 }                
             }
         }
 
         void printOdd() throws InterruptedException{
-            synchronized(this){                     
-                for (int i = 0; i < N; i++) {
-                    if(i%2!=0)
-                        System.out.println("Odd "+i);
-                    wait();
+            synchronized(this){
+                while(counter<N){
+                    if(counter%2==0)
+                        wait();
+                    System.out.println("Odd "+counter);
+                    counter++;
                     notify();
                 }                
             }

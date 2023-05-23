@@ -1,0 +1,11 @@
+Goal: Sort any type of data
+
+Q. How can sort() know how to compare data of type Double, String, etc without any information about the type of an Item's key
+
+Callback= reference to executable code.
+    - client passes array of objects to sort() function
+    - The sort() function calls back object's compareTo() method as needed
+
+Implementing callbacks:
+    - Java: Interfaces
+

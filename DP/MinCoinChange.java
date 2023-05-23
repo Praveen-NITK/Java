@@ -1,6 +1,7 @@
 package DP;
 
 import java.util.Arrays;
+//https://labuladong.gitbook.io/algo-en/ii.-data-structure/framework-and-thoughts-about-learning-data-structure-and-algorithm
 
 /**
  * at least  how many COINS are needed to scrape up this amount, if it is impossible, the algorithm returns -1.

@@ -8,7 +8,7 @@ public class MatchBrackets {
     }
 
     private static boolean isMatchingBrackets(String input) {
-        Stack<Character> st= new LinkedLinkBasedStack<>();
+        Stack<Character> st= new LinkedListBasedStack<>();
         for (Character ch:input.toCharArray()) {
             String opening = "({[";
             String closing = ")}]";

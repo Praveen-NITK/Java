@@ -5,7 +5,7 @@
 
 package Tree;
 
-import java.util.Stack;
+import java.util.ArrayList;
 
 public class RootToNodePath{
     static class Node{
@@ -26,28 +26,27 @@ public class RootToNodePath{
         root.right.left=new Node(6);
         root.right.right= new Node(7);
 
-        getRootToNodePathPreOrder(root,5);
+        ArrayList<Integer> path = new ArrayList<>();
+        isRootToNodePath(root,7,path);
 
-        for (Integer val : st) {
-            System.out.println(val);
+        for (Integer val : path) {
+            System.out.print(val+" "); //1 3 7
         }
     }
-    static Stack<Integer> st= new Stack<>();
-    static boolean keyFound=false;
-    static boolean leftfromroot=false;
 
-    private static boolean getRootToNodePathPreOrder(Node root, int key) {
+    private static boolean isRootToNodePath(Node root, int key, ArrayList<Integer> path) {
         if(root==null)
             return false;
-        if(root.data==key){
-            st.push(root.data);
+        path.add(root.data);
+        if(root.data==key)
             return true;
-        }        
-        
-        return getRootToNodePathPreOrder(root.left, key) || getRootToNodePathPreOrder(root.right, key);
-                
-
-        
+        if(isRootToNodePath(root.left, key, path) || isRootToNodePath(root.right, key,path)){
+            return true;
+        }
+        else {
+            path.remove(path.size()-1);
+            return false;
+        }
 
     }
 }

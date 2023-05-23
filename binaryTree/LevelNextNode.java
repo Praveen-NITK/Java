@@ -40,7 +40,7 @@ public class LevelNextNode {
         root.right.right.left=new TreeNode(7);
         root.right.right.right=new TreeNode(8);
 
-        TreeNode next=findNext(root.right.right.right, root);
+        TreeNode next=findNext(root.right.right.left, root);
         if (next!=null)
             System.out.println(next.data);
         else

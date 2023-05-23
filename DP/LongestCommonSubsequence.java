@@ -4,7 +4,7 @@ package DP;
 public class LongestCommonSubsequence{
     public static void main(String[] args) {
         String first="ABCDE";
-        String second="CDEFG";
+        String second="CBDEFG";
         //int result= getMaxCommonSubsequence(first,second, first.length(),second.length());
         //int resultMem= getLCSMemoized(first,second, first.length(),second.length());
         int resultDP= getLCS_DP(first,second, first.length(),second.length());
@@ -32,23 +32,20 @@ public class LongestCommonSubsequence{
         if(mem[m][n]!=0)
             return mem[m][n];
         if(first.charAt(m-1)==second.charAt(n-1))
-            mem[m][n]=1+getMaxCommonSubsequence(first, second, m-1, n-1);
+            mem[m][n]=1+getLCSMemoized(first, second, m-1, n-1);
         else
-            mem[m][n]=Math.max(getMaxCommonSubsequence(first, second, m, n-1), getMaxCommonSubsequence(first, second, m-1, n));
+            mem[m][n]=Math.max(getLCSMemoized(first, second, m, n-1), getLCSMemoized(first, second, m-1, n));
         return mem[m][n];
     }
 
     private static int getLCS_DP(String first, String second, int m, int n){
         int lcs[][]= new int[m+1][n+1];
-        for (int i = 0; i <m ; i++) {
-            lcs[i][0]=0;
-        }
-        for (int j = 0; j < n; j++) {
-            lcs[0][j]=0;
-        }
-        for (int i = 1; i <= m; i++) {
-            for (int j = 1; j <= n; j++) {
-                if(first.charAt(i-1)==second.charAt(j-1))
+
+        for (int i = 0; i <= m; i++) {
+            for (int j = 0; j <= n; j++) {
+                if(i==0 || j==0)
+                    lcs[i][j]=0;
+                else if(first.charAt(i-1)==second.charAt(j-1))
                     lcs[i][j]=1+ lcs[i-1][j-1];
                 else
                     lcs[i][j]=Math.max(lcs[i][j-1], lcs[i-1][j]);
