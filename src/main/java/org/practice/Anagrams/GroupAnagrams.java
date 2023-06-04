@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/
-package Anagrams;
+package org.practice.Anagrams;
 
 import java.util.*;
 

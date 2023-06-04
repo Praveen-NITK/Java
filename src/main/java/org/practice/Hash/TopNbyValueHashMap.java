@@ -1,16 +1,18 @@
 package Hash;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * print name of top n students having higher score in descending order
  * [("ram",4),("raj",5),("kishore",2)]
  * Asked in Google
+ * https://javaconceptoftheday.com/java-8-sort-hashmap-by-values/
  */
 public class TopNbyValueHashMap {
     public static void main(String[] args) {
         Map<String,Integer> inputMap = new HashMap<>();
-        inputMap.put("a",4);
+        inputMap.put("a",3);
         inputMap.put("b",4);
         inputMap.put("c",2);
         List<String> result=getTopByCount(inputMap,2);
@@ -33,7 +35,8 @@ public class TopNbyValueHashMap {
         }
 
 //        return getTopNStrings(inputMap, n);
-        return topNKeys(inputMap,n);
+//        return topNKeys(inputMap,n);
+        return getTopNStringsUsingStream(inputMap,n);
     }
 
     //Sorting hashmap based on values
@@ -51,6 +54,17 @@ public class TopNbyValueHashMap {
                 else return -1;
             }
         });
+        return userList.subList(0, n);
+    }
+
+
+    private static List<String> getTopNStringsUsingStream(Map<String, Integer> inputMap, int n) {
+        Map<String,Integer> sortedMap=inputMap.entrySet()
+                .stream()
+                .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1,  e2) -> e1, LinkedHashMap::new));
+
+        List<String> userList= new ArrayList<>(sortedMap.keySet());
         return userList.subList(0, n);
     }
 

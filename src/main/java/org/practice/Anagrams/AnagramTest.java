@@ -1,4 +1,4 @@
-package Anagrams;
+package org.practice.Anagrams;
 
 import java.util.Arrays;
 
