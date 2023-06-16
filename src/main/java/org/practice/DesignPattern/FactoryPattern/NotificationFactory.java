@@ -1,4 +1,4 @@
-package DesignPattern.FactoryPattern;
+package org.practice.DesignPattern.FactoryPattern;
 
 public class NotificationFactory {
     public Notification getNotification(String type){

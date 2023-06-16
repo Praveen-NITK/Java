@@ -1,4 +1,4 @@
-package ComapareTest;
+package org.practice.ComapareTest;
 
 import java.util.*;
 

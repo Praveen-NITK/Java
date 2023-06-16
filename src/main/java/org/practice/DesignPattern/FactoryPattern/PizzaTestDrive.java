@@ -1,4 +1,4 @@
-package DesignPattern.FactoryPattern;
+package org.practice.DesignPattern.FactoryPattern;
 public class PizzaTestDrive{
     public static void main(String[] args) {
         PizzaStore chicagoStore=new ChicagoStylePizzaStore();

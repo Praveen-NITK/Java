@@ -1,4 +1,4 @@
-package Strings;
+package org.practice.Strings;
 //Check if string has all unique chars, no additional DS
 //Wrong Implementation
 public class UniqueChars{

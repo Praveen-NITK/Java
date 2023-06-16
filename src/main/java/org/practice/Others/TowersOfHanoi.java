@@ -1,4 +1,4 @@
-package Others;
+package org.practice.Others;
 public class TowersOfHanoi{
     public static void main(String[] args) {            
         TOI('S','D','A', 3);

@@ -1,4 +1,4 @@
-package BillShare;
+package org.practice.BillShare;
 public class MoneyOwe{
     String billName;
     String oweTo;

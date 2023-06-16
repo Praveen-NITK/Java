@@ -1,4 +1,4 @@
-package BST;
+package org.practice.BST;
 
 import java.util.Date;
 

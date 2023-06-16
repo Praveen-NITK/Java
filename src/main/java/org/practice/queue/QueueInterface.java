@@ -1,4 +1,4 @@
-package queue;
+package org.practice.queue;
 
 public interface QueueInterface<E> {
     void enqueue(E e);

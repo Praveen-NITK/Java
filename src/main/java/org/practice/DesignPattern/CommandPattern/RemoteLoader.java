@@ -1,4 +1,4 @@
-package DesignPattern.CommandPattern;
+package org.practice.DesignPattern.CommandPattern;
 public class RemoteLoader{
     public static void main(String[] args) {
         RemoteControl remoteControl= new RemoteControl();

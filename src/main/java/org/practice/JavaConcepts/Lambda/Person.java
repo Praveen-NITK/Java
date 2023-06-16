@@ -1,4 +1,4 @@
-package JavaConcepts.Lambda;
+package org.practice.JavaConcepts.Lambda;
 public class Person{
     private int id;
     private String firstName;

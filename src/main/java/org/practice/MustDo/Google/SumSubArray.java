@@ -1,4 +1,4 @@
-package MustDo.Google;
+package org.practice.MustDo.Google;
 //find if contiguous sub array exist with given sum
 //https://www.geeksforgeeks.org/must-coding-questions-company-wise/#google
 public class SumSubArray{

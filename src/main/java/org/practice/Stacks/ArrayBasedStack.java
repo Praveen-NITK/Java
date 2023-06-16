@@ -1,4 +1,4 @@
-package Stacks;
+package org.practice.Stacks;
 
 public class ArrayBasedStack<E> implements Stack<E> {
     public static final int CAPACITY=1000;

@@ -1,4 +1,4 @@
-package Strings;
+package org.practice.Strings;
 
 public class Padding {
     public static void main(String[] args) {

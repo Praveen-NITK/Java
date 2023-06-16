@@ -1,4 +1,4 @@
-package AlgorithmsBook.queue;
+package org.practice.AlgorithmsBook.queue;
 
 
 public class ArrayQueueOfStrings implements QueueImplementation<String> {

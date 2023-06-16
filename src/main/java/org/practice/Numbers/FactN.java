@@ -1,4 +1,4 @@
-package Numbers;
+package org.practice.Numbers;
 public class FactN{
     public static void main(String[] args) {
         int number=18;

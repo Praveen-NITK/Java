@@ -1,4 +1,4 @@
-package Tree;
+package org.practice.Tree;
 
 public class PathMaxSum {
     static class Node{

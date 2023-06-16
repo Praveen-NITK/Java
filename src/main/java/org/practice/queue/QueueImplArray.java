@@ -1,4 +1,4 @@
-package queue;
+package org.practice.queue;
 
 public class QueueImplArray<E> implements QueueInterface<E> {
     public static final int CAPACITY=1000;

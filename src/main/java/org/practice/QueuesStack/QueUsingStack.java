@@ -1,4 +1,4 @@
-package QueuesStack;
+package org.practice.QueuesStack;
 
 import java.util.Stack;
 

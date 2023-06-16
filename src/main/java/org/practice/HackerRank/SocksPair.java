@@ -1,4 +1,4 @@
-package HackerRank;
+package org.practice.HackerRank;
 // https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
 /**
  *Complete the sockMerchant function in the editor below. It must return an integer representing the number of matching pairs of socks that are available.

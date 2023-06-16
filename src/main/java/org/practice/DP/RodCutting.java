@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 //https://www.geeksforgeeks.org/cutting-a-rod-dp-13/
 //length   | 1   2   3   4   5   6   7   8
 //--------------------------------------------

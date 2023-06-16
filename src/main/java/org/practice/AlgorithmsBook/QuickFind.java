@@ -1,4 +1,4 @@
-package AlgorithmsBook;
+package org.practice.AlgorithmsBook;
 
 // In a set of components check if they are connected or not?
 

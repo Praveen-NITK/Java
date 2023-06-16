@@ -1,4 +1,4 @@
-package DesignPattern.FactoryPattern;
+package org.practice.DesignPattern.FactoryPattern;
 public class ChicagoStylePizzaStore extends PizzaStore{
     public Pizza createPizza(String type){
         if(type.equals("cheese")){

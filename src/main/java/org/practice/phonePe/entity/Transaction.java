@@ -1,4 +1,4 @@
-package phonePe.entity;
+package org.practice.phonePe.entity;
 
 import phonePe.enums.InstrumentType;
 import phonePe.enums.TransactionStatus;

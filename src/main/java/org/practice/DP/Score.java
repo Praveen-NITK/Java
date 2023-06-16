@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 
 import java.util.Arrays;
 //Goldman Sacs: https://leetcode.com/discuss/interview-question/334671/goldman-sachs-online-assessment-july-2019

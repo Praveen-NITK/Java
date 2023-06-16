@@ -1,4 +1,4 @@
-package MultiThreading;
+package org.practice.MultiThreading;
 ////https://www.geeksforgeeks.org/inter-thread-communication-java/
 public class PrintOddEven{
     static int N;

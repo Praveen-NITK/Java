@@ -1,4 +1,4 @@
-package phonePe.payModes;
+package org.practice.phonePe.payModes;
 
 import phonePe.Merchant;
 import phonePe.enums.InstrumentType;

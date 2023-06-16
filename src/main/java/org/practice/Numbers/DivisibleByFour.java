@@ -1,4 +1,4 @@
-package Numbers;
+package org.practice.Numbers;
 
 public class DivisibleByFour {
     public static void main(String[] args) {

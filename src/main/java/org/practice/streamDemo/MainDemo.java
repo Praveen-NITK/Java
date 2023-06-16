@@ -1,4 +1,4 @@
-package org.practice.streamDemo;
+package org.practice.org.practice.streamDemo;
 
 import java.util.*;
 import java.util.function.DoubleConsumer;

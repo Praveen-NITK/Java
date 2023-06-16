@@ -1,4 +1,4 @@
-package Tree;
+package org.practice.Tree;
 
 import java.util.HashSet;
 import java.util.Set;

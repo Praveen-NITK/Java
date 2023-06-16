@@ -1,4 +1,4 @@
-package JavaConcepts.Lambda;
+package org.practice.JavaConcepts.Lambda;
 public class RunnableExample{
     public static void main(String[] args) {
         Thread t= new Thread(new Runnable(){

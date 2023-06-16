@@ -1,4 +1,4 @@
-package Others;
+package org.practice.Others;
 class A{
     int a;
     int b;

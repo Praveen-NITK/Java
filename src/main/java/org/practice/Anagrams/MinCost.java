@@ -1,4 +1,4 @@
-package Anagrams;
+package org.practice.Anagrams;
 
 //https://www.geeksforgeeks.org/minimum-cost-make-two-strings-identical/
 

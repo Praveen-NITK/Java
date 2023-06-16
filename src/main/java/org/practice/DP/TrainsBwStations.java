@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 public class TrainsBwStations{
     public static void main(String[] args) {
         int [][]costMatrix=new int[][]{{0,10,75,94},

@@ -1,4 +1,4 @@
-package Numbers;
+package org.practice.Numbers;
 
 public class LCM_GCD{
     public static void main(String[] args) {

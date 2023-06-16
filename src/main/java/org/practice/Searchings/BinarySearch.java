@@ -1,4 +1,4 @@
-package Searchings;
+package org.practice.Searchings;
 import java.util.*;
 
 public class BinarySearch{

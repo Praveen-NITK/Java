@@ -1,4 +1,4 @@
-package phonePe.entity;
+package org.practice.phonePe.entity;
 
 public class Card {
     private Integer type;

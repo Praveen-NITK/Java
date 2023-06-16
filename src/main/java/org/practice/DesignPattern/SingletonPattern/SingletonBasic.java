@@ -1,4 +1,4 @@
-package DesignPattern.SingletonPattern;
+package org.practice.DesignPattern.SingletonPattern;
 public class SingletonBasic{
     private static SingletonBasic singletonInstance;
     private String instanceName;

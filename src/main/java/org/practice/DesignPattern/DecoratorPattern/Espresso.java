@@ -1,4 +1,4 @@
-package DesignPattern.DecoratorPattern;
+package org.practice.DesignPattern.DecoratorPattern;
 public class Espresso extends Beverage{
     public Espresso(){
         description="Espresso";

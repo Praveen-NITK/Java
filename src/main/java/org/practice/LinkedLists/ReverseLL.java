@@ -1,4 +1,4 @@
-package LinkedLists;
+package org.practice.LinkedLists;
 
 import LinkedLists.CreateLL.Node;
 

@@ -1,4 +1,4 @@
-package Others;
+package org.practice.Others;
 public class SingletonClass{
     private static SingletonClass singletonInstance = null;
     private int value=10;

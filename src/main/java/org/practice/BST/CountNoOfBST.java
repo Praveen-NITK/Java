@@ -1,4 +1,4 @@
-package BST;
+package org.practice.BST;
 //https://www.geeksforgeeks.org/count-the-number-of-binary-search-trees-present-in-a-binary-tree/
 // A Binary Tree is a Binary Search Tree if the following are true for every node x.
 // 1. The largest value in left subtree (of x) is smaller than value of x.

@@ -1,4 +1,4 @@
-package JavaConcepts.Lambda;
+package org.practice.JavaConcepts.Lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;

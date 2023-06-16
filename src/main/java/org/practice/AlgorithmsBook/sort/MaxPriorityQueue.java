@@ -1,4 +1,4 @@
-package AlgorithmsBook.sort;
+package org.practice.AlgorithmsBook.sort;
 
 
 //Array Implementation of priority Queue

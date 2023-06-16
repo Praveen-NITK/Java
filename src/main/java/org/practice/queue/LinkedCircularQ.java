@@ -1,4 +1,4 @@
-package queue;
+package org.practice.queue;
 
 public class LinkedCircularQ<E> extends QueueImplLinkedList<E> implements CircularQ<E> {
 

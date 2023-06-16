@@ -1,4 +1,4 @@
-package MultiThreading;
+package org.practice.MultiThreading;
 // Java program to demonstrate inter-thread communication 
 // (wait(), join() and notify()) in Java 
 //https://www.geeksforgeeks.org/inter-thread-communication-java/

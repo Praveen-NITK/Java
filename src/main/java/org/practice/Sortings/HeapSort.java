@@ -1,4 +1,4 @@
-package Sortings;
+package org.practice.Sortings;
 public class HeapSort{
 
     public static void sort(int arr[]){

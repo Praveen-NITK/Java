@@ -1,4 +1,4 @@
-package BackTracking;
+package org.practice.BackTracking;
 //https://www.geeksforgeeks.org/find-number-of-islands/
 //Based on Conected Components in a graph
 //Either Connected Horizontally Vertically or diagonally

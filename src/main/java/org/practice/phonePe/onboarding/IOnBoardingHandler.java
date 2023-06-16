@@ -1,4 +1,4 @@
-package phonePe.onboarding;
+package org.practice.phonePe.onboarding;
 
 import phonePe.Merchant;
 

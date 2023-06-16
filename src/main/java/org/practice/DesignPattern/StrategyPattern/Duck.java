@@ -1,4 +1,4 @@
-package DesignPattern.StrategyPattern;
+package org.practice.DesignPattern.StrategyPattern;
 public abstract class Duck{
     // FlyBehavior flyBehavior;
     // QuackBehavior quackBehavior;

@@ -1,4 +1,4 @@
-package Others;
+package org.practice.Others;
 
 import java.text.NumberFormat;
 import java.util.Locale;

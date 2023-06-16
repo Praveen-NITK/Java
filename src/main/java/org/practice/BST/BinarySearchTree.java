@@ -1,4 +1,4 @@
-package BST;
+package org.practice.BST;
 //https://www.geeksforgeeks.org/binary-search-tree-data-structure/
 // Java program to demonstrate insert operation in binary search tree 
 class BinarySearchTree { 

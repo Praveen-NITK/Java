@@ -1,4 +1,4 @@
-package LinkedLists;
+package org.practice.LinkedLists;
 
 public class CircularLinkList<E> {
     private static class Node<E> {

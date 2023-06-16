@@ -1,4 +1,4 @@
-package zpractice;
+package org.practice.zpractice;
 
 import java.util.Stack;
 

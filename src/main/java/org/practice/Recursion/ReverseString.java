@@ -1,4 +1,4 @@
-package Recursion;
+package org.practice.Recursion;
 
 public class ReverseString {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Tree;
+package org.practice.Tree;
 //Iterative
 //https://www.geeksforgeeks.org/check-if-a-given-binary-tree-is-complete-tree-or-not/
 

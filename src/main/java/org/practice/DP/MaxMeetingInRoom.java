@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 //https://www.geeksforgeeks.org/find-maximum-meetings-in-one-room/
 import java.util.*;
 //Greedy Approach

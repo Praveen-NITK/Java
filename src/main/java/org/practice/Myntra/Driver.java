@@ -1,4 +1,4 @@
-package Myntra;
+package org.practice.Myntra;
 public class Driver{
     String name;
     Boolean isMale;

@@ -1,4 +1,4 @@
-package BackTracking;
+package org.practice.BackTracking;
 //https://www.geeksforgeeks.org/travelling-salesman-problem-implementation-using-backtracking/
 public class TSP{
     public static void main(String[] args) {

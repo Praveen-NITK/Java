@@ -1,4 +1,4 @@
-package practice.revision;
+package org.practice.practice.revision;
 
 import java.util.Arrays;
 

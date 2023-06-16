@@ -1,4 +1,4 @@
-package BillShare;
+package org.practice.BillShare;
 
 import java.util.ArrayList;
 public class Group extends UserGroup{    

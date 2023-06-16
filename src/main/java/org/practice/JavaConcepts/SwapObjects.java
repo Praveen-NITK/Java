@@ -1,4 +1,4 @@
-package JavaConcepts;
+package org.practice.JavaConcepts;
 
 public class SwapObjects {
     public static class Employee{

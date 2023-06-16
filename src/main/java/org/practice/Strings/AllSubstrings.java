@@ -1,4 +1,4 @@
-package Strings;
+package org.practice.Strings;
 
 public class AllSubstrings {
     public static void main(String[] args) {

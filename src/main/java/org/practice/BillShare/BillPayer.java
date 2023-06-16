@@ -1,4 +1,4 @@
-package BillShare;
+package org.practice.BillShare;
 public class BillPayer extends BillParticipant{
     BillPayer(Participant p, double sA, double pA){
         person=p;

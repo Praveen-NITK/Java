@@ -1,4 +1,4 @@
-package DesignPattern.IteratorPattern;
+package org.practice.DesignPattern.IteratorPattern;
 public class MenuTestDrive{
     public static void main(String[] args) {
         PanCakeHouseMenu panCakeHouseMenu=new PanCakeHouseMenu();

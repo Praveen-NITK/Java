@@ -1,4 +1,4 @@
-package DesignPattern.SingletonPattern;
+package org.practice.DesignPattern.SingletonPattern;
 public class DoubleCheckInstantiation{
     private volatile static DoubleCheckInstantiation instance;
     private DoubleCheckInstantiation(){}

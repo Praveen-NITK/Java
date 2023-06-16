@@ -1,4 +1,4 @@
-package BST;
+package org.practice.BST;
 //https://www.geeksforgeeks.org/merge-two-balanced-binary-search-trees/
 //Insert elements of the first tree to second
 public class MergeBST{

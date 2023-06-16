@@ -1,4 +1,4 @@
-package Others;
+package org.practice.Others;
 public class CountSetBits{
     public static void main(String[] args) {
         System.out.println(getCountOfSetBits(13));

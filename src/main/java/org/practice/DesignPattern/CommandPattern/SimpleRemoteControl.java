@@ -1,4 +1,4 @@
-package DesignPattern.CommandPattern;
+package org.practice.DesignPattern.CommandPattern;
 public class SimpleRemoteControl{
     Command slot;
     public SimpleRemoteControl(){}

@@ -1,4 +1,4 @@
-package Graph;
+package org.practice.Graph;
 // Java implementation of the approach 
 import java.util.*; 
 

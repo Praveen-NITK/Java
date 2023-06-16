@@ -1,4 +1,4 @@
-package Numbers;
+package org.practice.Numbers;
 //https://www.geeksforgeeks.org/program-to-add-two-fractions/
 public class SumOfFraction{
     public static void main(String[] args) {

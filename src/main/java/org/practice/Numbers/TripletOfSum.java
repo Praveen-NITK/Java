@@ -1,4 +1,4 @@
-package Numbers;
+package org.practice.Numbers;
 
 import java.util.HashSet;
 import java.util.Hashtable;

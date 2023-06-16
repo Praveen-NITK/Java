@@ -1,4 +1,4 @@
-package FLIPKART;
+package org.practice.FLIPKART;
 
 public class FCache implements FlipCache{
     public EvictionPolicy evcp;    

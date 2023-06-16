@@ -1,4 +1,4 @@
-package phonePe;
+package org.practice.phonePe;
 
 import phonePe.entity.Account;
 import phonePe.entity.Transaction;

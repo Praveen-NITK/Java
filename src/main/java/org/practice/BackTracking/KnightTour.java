@@ -1,4 +1,4 @@
-package BackTracking;
+package org.practice.BackTracking;
 // Java program for Knight Tour problem 
 class KnightTour { 
 	static int N = 8; 

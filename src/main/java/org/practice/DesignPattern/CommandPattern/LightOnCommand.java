@@ -1,4 +1,4 @@
-package DesignPattern.CommandPattern;
+package org.practice.DesignPattern.CommandPattern;
 public class LightOnCommand implements Command{
     Light light;
     public LightOnCommand(Light light){

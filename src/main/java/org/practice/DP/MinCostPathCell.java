@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 //Movement allowed only right and down.
 public class MinCostPathCell{
     static int [][]Mem= new int[3][4];

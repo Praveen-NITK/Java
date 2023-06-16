@@ -1,4 +1,4 @@
-package DesignPattern.ObserverPattern;
+package org.practice.DesignPattern.ObserverPattern;
 public class PressureObserver implements Observer, DisplayElement{
     private float temperature;
     private float pressure;

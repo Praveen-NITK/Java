@@ -1,4 +1,4 @@
-package Sortings;
+package org.practice.Sortings;
 public class Hps{
     public static void main(String[] args) {
         int[] inp= new int[]{2,5,1,8,4,3};

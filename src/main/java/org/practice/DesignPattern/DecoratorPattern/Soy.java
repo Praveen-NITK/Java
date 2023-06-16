@@ -1,4 +1,4 @@
-package DesignPattern.DecoratorPattern;
+package org.practice.DesignPattern.DecoratorPattern;
 public class Soy extends CondimentDecorator{
     //Beverage beverage;
     public Soy(Beverage beverage){

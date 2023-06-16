@@ -1,4 +1,4 @@
-package MultiThreading;
+package org.practice.MultiThreading;
 
 /**
  * Difference between Thread Dump and Heap Dump?

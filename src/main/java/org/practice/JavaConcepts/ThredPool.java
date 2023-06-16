@@ -1,4 +1,4 @@
-package JavaConcepts;
+package org.practice.JavaConcepts;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;

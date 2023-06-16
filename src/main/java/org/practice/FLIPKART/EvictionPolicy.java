@@ -1,4 +1,4 @@
-package FLIPKART;
+package org.practice.FLIPKART;
 public interface EvictionPolicy{
     //Can be made more generic
     public String EvictionPolicyName="";

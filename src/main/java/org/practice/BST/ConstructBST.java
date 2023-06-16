@@ -1,4 +1,4 @@
-package BST;
+package org.practice.BST;
 //https://www.geeksforgeeks.org/binary-search-tree-data-structure/
 class ConstructBST{
     class Node{

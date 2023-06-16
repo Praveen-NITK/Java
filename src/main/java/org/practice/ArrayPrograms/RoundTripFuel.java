@@ -1,4 +1,4 @@
-package ArrayPrograms;
+package org.practice.ArrayPrograms;
 
 public class RoundTripFuel {
     public static void main(String[] args) {

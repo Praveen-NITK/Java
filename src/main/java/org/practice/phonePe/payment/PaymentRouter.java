@@ -1,4 +1,4 @@
-package phonePe.payment;
+package org.practice.phonePe.payment;
 
 public class PaymentRouter {
 }

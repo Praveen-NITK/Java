@@ -1,4 +1,4 @@
-package AlgorithmsBook.sort;
+package org.practice.AlgorithmsBook.sort;
 
 public class BinaryHeap<T extends Comparable<T>> {
     private T []bhp;

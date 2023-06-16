@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 //https://www.geeksforgeeks.org/fractional-knapsack-problem/
 import java.util.Arrays;
 import java.util.Comparator;

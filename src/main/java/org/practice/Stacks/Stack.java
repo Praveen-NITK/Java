@@ -1,4 +1,4 @@
-package Stacks;
+package org.practice.Stacks;
 
 public interface Stack<E> {
     int size();

@@ -1,4 +1,4 @@
-package LambdaBasics;
+package org.practice.LambdaBasics;
 
 public class WhatIsLambda {
     public static void main(String[] args) {

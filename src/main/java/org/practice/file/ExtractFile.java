@@ -1,4 +1,4 @@
-package org.practice.file;
+package org.practice.org.practice.file;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -10,17 +10,13 @@ public class ExtractFile {
         File path = new File("C:\\Users\\Admin\\Desktop\\practiceOn\\src\\main\\java\\org\\practice");
         Stack<File> fileStack = new Stack<>();
         fileStack.add(path);
-        int counter=0;
+//        int counter=0;
 
-//        while (!fileStack.isEmpty()){
-        while (counter<5){
+        while (!fileStack.isEmpty()){
+//        while (counter<5){
             File f= fileStack.pop();
-            if (f.isFile()){
+            if (f.isFile() && f.getName().contains(".java")){
                 try {
-//                    OutputStream os = new FileOutputStream(new File(f.getPath()), false);
-//                    os.write("org.practice.".getBytes(), 0, "org.practice.".length());
-//                    os.close();
-                    // An array to store each line in the file
                     ArrayList<String> fileContent = new ArrayList<String>();
                     Scanner myReader = new Scanner(f);
                     while (myReader.hasNextLine()) {
@@ -29,15 +25,22 @@ public class ExtractFile {
                     }
                     myReader.close();
                     String s= fileContent.get(0);
-                    String temp=s.split(" ")[1];
-                    fileContent.remove(0);
-                    fileContent.add(0,"package org.practice."+temp);
-                    // Writes the new content to file
-                    FileWriter myWriter = new FileWriter(f);
-                    for (String eachLine : fileContent) {
-                        myWriter.write(eachLine + "\n");
+                    String temp = "";
+                    if(s!=null && !s.isEmpty() && s.startsWith("package")) {
+                        String[] arr = s.split(" ");
+
+                        if (arr.length > 1)
+                            temp = arr[1];
+
+                        fileContent.remove(0);
+                        fileContent.add(0, "package org.practice." + temp);
+                        // Writes the new content to file
+                        FileWriter myWriter = new FileWriter(f);
+                        for (String eachLine : fileContent) {
+                            myWriter.write(eachLine + "\n");
+                        }
+                        myWriter.close();
                     }
-                    myWriter.close();
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
@@ -49,7 +52,7 @@ public class ExtractFile {
                     fileStack.push(subFile);
                 }
             }
-            counter++;
+//            counter++;
         }
     }
 }

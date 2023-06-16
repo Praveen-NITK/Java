@@ -1,4 +1,4 @@
-package ArrayPrograms;
+package org.practice.ArrayPrograms;
 //Given a string of 0 and 1
 //https://devsolus.com/2022/04/26/minimum-number-of-swaps-required-to-make-a-binary-string-palindrome/?amp=1
 public class MinSwapPalindrome {

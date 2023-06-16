@@ -1,4 +1,4 @@
-package Numbers;
+package org.practice.Numbers;
 
 import java.util.ArrayList;
 import java.util.List;

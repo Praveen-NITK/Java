@@ -1,4 +1,4 @@
-package DesignPattern.DecoratorPattern;
+package org.practice.DesignPattern.DecoratorPattern;
 public class DarkRoast extends Beverage{
     public DarkRoast(){
         description="DarkRoast cofee";

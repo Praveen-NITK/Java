@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 public class WordInterleave{
     public static void main(String[] args) {
         String A="abcd";

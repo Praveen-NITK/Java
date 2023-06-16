@@ -1,4 +1,4 @@
-package DesignPattern.IteratorPattern;
+package org.practice.DesignPattern.IteratorPattern;
 public class DinerMenu implements Menu{
     static final int MAX_ITEMS=2;
     int noOfItems=0;

@@ -1,4 +1,4 @@
-package JavaConcepts;
+package org.practice.JavaConcepts;
 
 import java.util.Arrays;
 import java.util.Collections;

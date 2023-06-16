@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 //https://www.geeksforgeeks.org/printing-items-01-knapsack/ ==>chexk this too
 //https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
 import java.util.Arrays;

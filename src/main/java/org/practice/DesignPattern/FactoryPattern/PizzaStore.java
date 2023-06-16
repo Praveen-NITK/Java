@@ -1,4 +1,4 @@
-package DesignPattern.FactoryPattern;
+package org.practice.DesignPattern.FactoryPattern;
 public abstract class PizzaStore{
     public final Pizza orderPizza(String type){
         Pizza pizza;

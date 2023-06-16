@@ -1,4 +1,4 @@
-package Sortings;
+package org.practice.Sortings;
 public class SelectionSort{
     public static void main(final String[] args) {
         final int[] input={8,4,7,3,1,0,5,6,9,2};

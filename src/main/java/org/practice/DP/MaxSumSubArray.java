@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 public class MaxSumSubArray{
     public static void main(String[] args) {        
         int []input= new int[]{-2,-3,4,-1,2,-3,5,-2,1};

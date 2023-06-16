@@ -1,4 +1,4 @@
-package Recursion;
+package org.practice.Recursion;
 
 public class TowerOfHanoi {
 

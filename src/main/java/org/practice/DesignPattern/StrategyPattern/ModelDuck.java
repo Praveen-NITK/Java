@@ -1,4 +1,4 @@
-package DesignPattern.StrategyPattern;
+package org.practice.DesignPattern.StrategyPattern;
 public class ModelDuck extends Duck{
     public ModelDuck(){
         //flyBehavior=new FlyNoWay();

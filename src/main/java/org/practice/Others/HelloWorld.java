@@ -1,4 +1,4 @@
-package Others;
+package org.practice.Others;
 //import java.io.*;
 public class HelloWorld{
     public static void main(String[] args) {

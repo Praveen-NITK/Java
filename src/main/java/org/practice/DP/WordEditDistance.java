@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 public class WordEditDistance{
     static String first="abb";
     static String second="bbc";

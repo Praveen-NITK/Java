@@ -1,4 +1,4 @@
-package Heap;
+package org.practice.Heap;
 public class SortingUsingHeap{
     public static void main(String[] args) {
         int []input= {2,7,12,8,5,13,14};

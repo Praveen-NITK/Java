@@ -1,4 +1,4 @@
-package DesignPattern.IteratorPattern;
+package org.practice.DesignPattern.IteratorPattern;
 public class DinerMenuIterator implements Iterator{
     MenuItem[] items;
     int position=0;

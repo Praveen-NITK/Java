@@ -1,4 +1,4 @@
-package ArrayPrograms;
+package org.practice.ArrayPrograms;
 
 /**
  * The three-way set disjointness

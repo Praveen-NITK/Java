@@ -1,4 +1,4 @@
-package Myntra;
+package org.practice.Myntra;
 public class Route{
     String routeName;
     int distance;

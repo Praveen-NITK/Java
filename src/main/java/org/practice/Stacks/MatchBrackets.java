@@ -1,4 +1,4 @@
-package Stacks;
+package org.practice.Stacks;
 
 public class MatchBrackets {
     public static void main(String[] args) {

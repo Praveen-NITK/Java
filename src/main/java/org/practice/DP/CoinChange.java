@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 //https://www.geeksforgeeks.org/coin-change-dp-7/
 
 //https://github.com/labuladong/fucking-algorithm/blob/english/dynamic_programming/AnalysisOfDynamicProgramming.md

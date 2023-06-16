@@ -1,4 +1,4 @@
-package Others;
+package org.practice.Others;
 //import sun.awt.image.ImageWatched.Link;
 
 public class FlattenLinkList{

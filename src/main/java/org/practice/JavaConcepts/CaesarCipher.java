@@ -1,4 +1,4 @@
-package JavaConcepts;
+package org.practice.JavaConcepts;
 
 public class CaesarCipher {
     char[] encoder= new char[26];

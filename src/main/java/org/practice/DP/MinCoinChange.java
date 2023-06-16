@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 
 import java.util.Arrays;
 //https://labuladong.gitbook.io/algo-en/ii.-data-structure/framework-and-thoughts-about-learning-data-structure-and-algorithm

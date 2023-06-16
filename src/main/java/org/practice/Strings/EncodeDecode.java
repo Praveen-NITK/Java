@@ -1,4 +1,4 @@
-package Strings;
+package org.practice.Strings;
 //Goldman sacs
 public class EncodeDecode {
     public static void main(String[] args) {

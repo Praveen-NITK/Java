@@ -1,4 +1,4 @@
-package ZJio;
+package org.practice.ZJio;
 
 public class Hrank {
     public static void main(String[] args) {

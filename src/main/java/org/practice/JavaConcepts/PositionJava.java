@@ -1,4 +1,4 @@
-package JavaConcepts;
+package org.practice.JavaConcepts;
 
 import javax.swing.text.Position;
 

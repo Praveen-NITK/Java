@@ -1,4 +1,4 @@
-package Tree;
+package org.practice.Tree;
 public class RootToLeafSumPath{
     static class Tree{
         int data;

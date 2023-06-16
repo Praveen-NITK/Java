@@ -1,4 +1,4 @@
-package LinkedLists;
+package org.practice.LinkedLists;
 public class CreateLL{
     static class Node{
         int data;

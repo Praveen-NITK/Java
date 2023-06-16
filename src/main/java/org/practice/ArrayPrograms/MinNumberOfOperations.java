@@ -1,4 +1,4 @@
-package ArrayPrograms;
+package org.practice.ArrayPrograms;
 //https://www.geeksforgeeks.org/minimum-number-operation-required-convert-number-x-y/
 
 import java.util.LinkedList;

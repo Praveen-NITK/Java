@@ -1,4 +1,4 @@
-package phonePe.enums;
+package org.practice.phonePe.enums;
 
 public enum TransactionStatus {
     INITIATED,

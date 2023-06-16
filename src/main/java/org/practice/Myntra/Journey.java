@@ -1,4 +1,4 @@
-package Myntra;
+package org.practice.Myntra;
 
 import java.util.ArrayList;
 import java.util.Collections;

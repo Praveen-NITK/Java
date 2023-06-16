@@ -1,4 +1,4 @@
-package Encapsulation;
+package org.practice.Encapsulation;
 public class Airplane{
     public int speed;
     public Airplane(){}

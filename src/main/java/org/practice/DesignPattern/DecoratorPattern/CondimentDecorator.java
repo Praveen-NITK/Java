@@ -1,4 +1,4 @@
-package DesignPattern.DecoratorPattern;
+package org.practice.DesignPattern.DecoratorPattern;
 
 public abstract class CondimentDecorator extends Beverage{
     Beverage beverage;

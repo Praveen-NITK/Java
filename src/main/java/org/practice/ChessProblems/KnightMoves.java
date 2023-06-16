@@ -1,4 +1,4 @@
-package ChessProblems;
+package org.practice.ChessProblems;
 
 // Possible moves of knight: (https://www.geeksforgeeks.org/possible-moves-knight/)
 // ------------------------

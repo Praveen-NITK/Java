@@ -1,4 +1,4 @@
-package Matrix;
+package org.practice.Matrix;
 //https://www.geeksforgeeks.org/print-a-given-matrix-in-spiral-form/
 import java.io.*; 
 

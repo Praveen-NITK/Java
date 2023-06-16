@@ -1,4 +1,4 @@
-package studyLinks;
+package org.practice.studyLinks;
 
 public class Medium {
     // API gateway

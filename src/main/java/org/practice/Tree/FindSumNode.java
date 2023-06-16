@@ -1,4 +1,4 @@
-package Tree;
+package org.practice.Tree;
 //Example 7.2 in Dynamic programming book amazon.
 public class FindSumNode{
     static class Tree{

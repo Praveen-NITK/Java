@@ -1,4 +1,4 @@
-package ExceptionHandling;
+package org.practice.ExceptionHandling;
 public class ThrowsSyntax{
     
     public static int devideByNumber(int diviser, int divident) throws Exception{

@@ -1,4 +1,4 @@
-package DesignPattern.FactoryPattern;
+package org.practice.DesignPattern.FactoryPattern;
 
 import java.util.ArrayList;
 

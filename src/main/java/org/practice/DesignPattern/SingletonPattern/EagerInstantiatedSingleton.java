@@ -1,4 +1,4 @@
-package DesignPattern.SingletonPattern;
+package org.practice.DesignPattern.SingletonPattern;
 public class EagerInstantiatedSingleton{
     private static EagerInstantiatedSingleton  instance= new EagerInstantiatedSingleton();
     private EagerInstantiatedSingleton(){}

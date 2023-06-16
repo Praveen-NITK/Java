@@ -1,4 +1,4 @@
-package Others;
+package org.practice.Others;
 //Kindle DP code 6.4
 //Find the longest substring of given string of digits, such that sum of digits in the first half
 //and second half in the substring are the same

@@ -1,4 +1,4 @@
-package DesignPattern.FactoryPattern;
+package org.practice.DesignPattern.FactoryPattern;
 public class ChicagoStyleCheesePizza extends Pizza{
     public ChicagoStyleCheesePizza(){
         name="Chicago style sauce and cheese Pizza";

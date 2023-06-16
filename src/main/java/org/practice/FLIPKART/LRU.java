@@ -1,4 +1,4 @@
-package FLIPKART;
+package org.practice.FLIPKART;
 
 import java.util.Deque;
 import java.util.HashSet;

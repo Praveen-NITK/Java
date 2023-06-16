@@ -1,4 +1,4 @@
-package BackTracking;
+package org.practice.BackTracking;
 public class TSPTest{
     public static void main(String[] args) {
         int n=4;

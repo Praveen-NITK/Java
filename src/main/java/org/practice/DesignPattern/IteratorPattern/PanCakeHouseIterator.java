@@ -1,4 +1,4 @@
-package DesignPattern.IteratorPattern; 
+package org.practice.DesignPattern.IteratorPattern;
 import java.util.ArrayList;  
 public class PanCakeHouseIterator implements Iterator{
     ArrayList<MenuItem> items;

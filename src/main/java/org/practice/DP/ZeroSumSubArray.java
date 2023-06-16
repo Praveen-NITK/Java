@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 
 import java.util.HashMap;
 

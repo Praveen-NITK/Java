@@ -1,4 +1,4 @@
-package Others;
+package org.practice.Others;
 // Java program to illustrate 
 // how hashCode() and equals() methods work 
 import java.io.*; 

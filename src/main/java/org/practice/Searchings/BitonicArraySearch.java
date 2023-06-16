@@ -1,4 +1,4 @@
-package Searchings;
+package org.practice.Searchings;
 //https://www.geeksforgeeks.org/find-element-bitonic-array/
 public class BitonicArraySearch{
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package queue;
+package org.practice.queue;
 
 import java.util.Random;
 

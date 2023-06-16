@@ -1,4 +1,4 @@
-package phonePe.entity;
+package org.practice.phonePe.entity;
 
 public class Account {
     private String userId;

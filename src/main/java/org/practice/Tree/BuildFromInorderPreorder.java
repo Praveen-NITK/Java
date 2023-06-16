@@ -1,4 +1,4 @@
-package Tree;
+package org.practice.Tree;
 
 //https://labuladong.gitbook.io/algo-en/ii.-data-structure/framework-and-thoughts-about-learning-data-structure-and-algorithm
 public class BuildFromInorderPreorder{

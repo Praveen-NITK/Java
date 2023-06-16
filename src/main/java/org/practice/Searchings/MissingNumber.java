@@ -1,4 +1,4 @@
-package Searchings;
+package org.practice.Searchings;
 //Numbers are sorted in range 1 to n+1, all unique one is missing
 //E.g {1,2,3,5,6,7,8}   --> missing number=4
 public class MissingNumber{

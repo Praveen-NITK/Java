@@ -1,4 +1,4 @@
-package AlgorithmsBook;
+package org.practice.AlgorithmsBook;
 
 /**
  * Fill the m litre jug and empty it into n liter jug.

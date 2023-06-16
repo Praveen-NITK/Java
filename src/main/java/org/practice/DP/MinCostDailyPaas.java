@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 public class MinCostDailyPaas{
     public static void main(String[] args) {
         int []TravelDays=new int[]{1,2,25,6,9,28,29};

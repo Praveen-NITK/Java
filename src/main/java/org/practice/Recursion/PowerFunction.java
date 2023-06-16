@@ -1,4 +1,4 @@
-package Recursion;
+package org.practice.Recursion;
 
 /**
  * power(x,n) =

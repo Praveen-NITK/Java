@@ -1,4 +1,4 @@
-package Others;
+package org.practice.Others;
 public class MaxDifference{
     public static void main(String[] args) {
         int[] input= new int[]{1,5,2,8,10,6};

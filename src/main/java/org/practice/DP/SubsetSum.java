@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 public class SubsetSum{
     public static void main(String[] args) {
         int []input= new int[]{3,2,7,2};

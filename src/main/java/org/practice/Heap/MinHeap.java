@@ -1,4 +1,4 @@
-package Heap;
+package org.practice.Heap;
 
 import java.util.Arrays;
 

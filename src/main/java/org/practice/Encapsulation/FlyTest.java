@@ -1,4 +1,4 @@
-package Encapsulation;
+package org.practice.Encapsulation;
 
 //Head first Object Oriented design
 public class FlyTest{

@@ -1,4 +1,4 @@
-package Heap;
+package org.practice.Heap;
 
     // Java program to implement Max Heap 
 public class MaxHeap { 

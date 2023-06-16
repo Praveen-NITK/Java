@@ -1,4 +1,4 @@
-package Myntra;
+package org.practice.Myntra;
 import java.util.List;
 public abstract class Vehicle{
     String name;

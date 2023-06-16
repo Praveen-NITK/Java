@@ -1,4 +1,4 @@
-package DesignPattern.CommandPattern;
+package org.practice.DesignPattern.CommandPattern;
 public class CeilingFanOnCommand implements Command{
     CeilingFan clfn;
     int prevSpeed;

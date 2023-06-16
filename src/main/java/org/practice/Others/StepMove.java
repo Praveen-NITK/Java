@@ -1,4 +1,4 @@
-package Others;
+package org.practice.Others;
 //can take 1 or 2 steps at a time
 public class StepMove
 {

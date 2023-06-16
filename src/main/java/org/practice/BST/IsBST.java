@@ -1,4 +1,4 @@
-package BST;
+package org.practice.BST;
 public class IsBST{
     public static class Node{
         int data;

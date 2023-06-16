@@ -1,4 +1,4 @@
-package Strings;
+package org.practice.Strings;
 
 /**
  * Its also called as pattern matching algorithm

@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 public class NoOfPaths{
     public static void main(String[] args) {
         int [][] matrix= new int[5][6];

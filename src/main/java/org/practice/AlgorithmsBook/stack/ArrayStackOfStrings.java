@@ -1,4 +1,4 @@
-package AlgorithmsBook.stack;
+package org.practice.AlgorithmsBook.stack;
 
 public class ArrayStackOfStrings implements StackImplementation<String>{
     String[] st= new String[1];

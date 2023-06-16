@@ -1,4 +1,4 @@
-package Numbers;
+package org.practice.Numbers;
 
 import java.util.Hashtable;
 //a^2+b^2=c^2 

@@ -1,4 +1,4 @@
-package Others;
+package org.practice.Others;
 public class MultiplicationTable{
     public static void main(String[] args) {
         //printTable(14);

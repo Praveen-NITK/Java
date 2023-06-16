@@ -1,4 +1,4 @@
-package BillShare;
+package org.practice.BillShare;
 public class BillShareApplication{
     public static void main(String[] args) {
         Participant person1= new Participant("person1@xyz.com","person1");

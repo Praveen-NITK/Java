@@ -1,4 +1,4 @@
-package ZJio;
+package org.practice.ZJio;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package Graph;
+package org.practice.Graph;
 
 import java.util.Arrays;
 import java.util.LinkedList;

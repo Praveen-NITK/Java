@@ -1,4 +1,4 @@
-package Graph;
+package org.practice.Graph;
 //https://algorithms.tutorialhorizon.com/category/dynamic-programming/
 
 import java.util.LinkedList;

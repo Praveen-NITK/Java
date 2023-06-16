@@ -1,4 +1,4 @@
-package JavaConcepts;
+package org.practice.JavaConcepts;
 
 /**
  * Arrays in Java are one-dimensional; we use a single index to access each cell

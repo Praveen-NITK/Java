@@ -1,4 +1,4 @@
-package JavaConcepts;
+package org.practice.JavaConcepts;
 
 public class DeadLockDemo {
     public static void main(String[] args) {

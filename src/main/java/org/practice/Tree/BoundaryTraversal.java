@@ -1,4 +1,4 @@
-package Tree;
+package org.practice.Tree;
 
 //https://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
 public class BoundaryTraversal {

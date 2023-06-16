@@ -1,4 +1,4 @@
-package FLIPKART;
+package org.practice.FLIPKART;
 public class CacheImplementation{
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package DP;
+package org.practice.DP;
 //An empty plot of size 2*n, cover it with tiles of dimension 2*1, Find total number of ways to cover..
 public class CoverTiles{
     public static void main(String[] args) {

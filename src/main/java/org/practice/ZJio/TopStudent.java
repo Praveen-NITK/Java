@@ -1,4 +1,4 @@
-package ZJio;
+package org.practice.ZJio;
 
 import java.util.ArrayList;
 import java.util.Collections;

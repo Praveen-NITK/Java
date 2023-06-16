@@ -1,4 +1,4 @@
-package AlgorithmsBook.stack;
+package org.practice.AlgorithmsBook.stack;
 
 //Linked list implementation of Stack
 public class LinkedStackOfStrings implements StackImplementation<String> {

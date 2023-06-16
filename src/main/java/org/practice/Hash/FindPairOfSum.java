@@ -1,4 +1,4 @@
-package Hash;
+package org.practice.Hash;
 import java.util.Hashtable;
 
 //https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/

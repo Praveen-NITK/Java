@@ -1,4 +1,4 @@
-package DesignPattern.IteratorPattern;
+package org.practice.DesignPattern.IteratorPattern;
 public class MenuItem{
     String name;
     String description;

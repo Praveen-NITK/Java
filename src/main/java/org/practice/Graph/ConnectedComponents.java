@@ -1,4 +1,4 @@
-package Graph;
+package org.practice.Graph;
 
 import java.util.LinkedList;
 //https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/

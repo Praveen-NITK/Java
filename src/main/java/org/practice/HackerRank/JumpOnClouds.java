@@ -1,4 +1,4 @@
-package HackerRank;
+package org.practice.HackerRank;
 
 public class JumpOnClouds {
     public static void main(String[] args) {

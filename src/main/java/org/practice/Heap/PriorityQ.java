@@ -1,4 +1,4 @@
-package Heap;
+package org.practice.Heap;
 //https://www.geeksforgeeks.org/max-heap-in-java/
 // Java program to demonstrate working of PriorityQueue as a Max Heap 
 //By default priority q is Min Heap, for making it max heap use collection's reverseOrder method

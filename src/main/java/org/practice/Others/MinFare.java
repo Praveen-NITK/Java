@@ -1,4 +1,4 @@
-package Others;
+package org.practice.Others;
 import java.util.Arrays;
 
 public class MinFare{
