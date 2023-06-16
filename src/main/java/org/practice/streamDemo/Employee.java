@@ -1,4 +1,4 @@
-package org.practice.org.practice.streamDemo;
+package org.practice.streamDemo;
 
 public class Employee {
     private String name;

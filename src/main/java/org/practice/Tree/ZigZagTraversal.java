@@ -1,5 +1,5 @@
 ////https://www.geeksforgeeks.org/zig-zag-level-order-traversal-of-a-tree-using-single-queue/
-package Tree;
+package org.practice.Tree;
 
 import java.util.Stack;
 

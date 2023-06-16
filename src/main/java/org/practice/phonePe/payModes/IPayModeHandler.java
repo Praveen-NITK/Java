@@ -1,7 +1,7 @@
 package org.practice.phonePe.payModes;
 
-import phonePe.Merchant;
-import phonePe.enums.InstrumentType;
+import org.practice.phonePe.Merchant;
+import org.practice.phonePe.enums.InstrumentType;
 
 import java.util.List;
 

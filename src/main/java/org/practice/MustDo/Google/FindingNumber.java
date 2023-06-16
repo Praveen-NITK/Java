@@ -2,7 +2,7 @@
 //whereas the other two number occur exactly once and are distinct. 
 //You need to find the other two numbers and print them in ascending order.
 //https://www.geeksforgeeks.org/find-two-non-repeating-elements-in-an-array-of-repeating-elements/
-package MustDo.Google;
+package org.practice.MustDo.Google;
 
 import java.util.HashSet;
 

@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/print-nodes-distance-k-given-node-binary-tree/
-package Tree;
+package org.practice.Tree;
 public class NodeAtKdistance{
     static class Node{
         int data;

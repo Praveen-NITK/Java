@@ -1,6 +1,6 @@
 //https://www.geeksforgeeks.org/delete-every-kth-node-from-circular-linked-list/
 //https://www.geeksforgeeks.org/josephus-problem-set-1-a-on-solution/ ==>for finding the survival position
-package LinkedLists;
+package org.practice.LinkedLists;
 public class DeleteKthCircular{
     static class Node{
         int data;

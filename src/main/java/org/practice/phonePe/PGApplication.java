@@ -1,13 +1,13 @@
 package org.practice.phonePe;
 
-import phonePe.entity.Account;
-import phonePe.entity.Transaction;
-import phonePe.enums.InstrumentType;
-import phonePe.onboarding.IOnBoardingHandler;
-import phonePe.onboarding.OnBoardingHandlerImpl;
-import phonePe.payModes.IPayModeHandler;
-import phonePe.payModes.PayModeHandlerImpl;
-import phonePe.payment.PaymentController;
+import org.practice.phonePe.entity.Account;
+import org.practice.phonePe.entity.Transaction;
+import org.practice.phonePe.enums.InstrumentType;
+import org.practice.phonePe.onboarding.IOnBoardingHandler;
+import org.practice.phonePe.onboarding.OnBoardingHandlerImpl;
+import org.practice.phonePe.payModes.IPayModeHandler;
+import org.practice.phonePe.payModes.PayModeHandlerImpl;
+import org.practice.phonePe.payment.PaymentController;
 import sun.management.counter.StringCounter;
 
 import java.util.ArrayList;

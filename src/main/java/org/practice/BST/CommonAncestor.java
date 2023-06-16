@@ -1,5 +1,5 @@
 //Find Lowest Common Ancestor in BST
-package BST;
+package org.practice.BST;
 
 public class CommonAncestor{
     static class Node{

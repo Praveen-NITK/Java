@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/find-if-a-string-is-interleaved-of-two-other-strings-dp-33
-package MustDo.Google;
+package org.practice.MustDo.Google;
 public class InterleavedString{
     public static void main(String[] args) {
         String a="aab";//"TTO";

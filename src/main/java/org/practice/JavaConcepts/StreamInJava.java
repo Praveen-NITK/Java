@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/stream-in-java/
-package JavaConcepts;
+package org.practice.JavaConcepts;
 
 import java.util.Arrays;
 

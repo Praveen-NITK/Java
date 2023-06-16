@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/reentrant-lock-java/
-package MultiThreading;
+package org.practice.MultiThreading;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

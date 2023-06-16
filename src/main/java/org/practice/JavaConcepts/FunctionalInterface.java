@@ -4,7 +4,7 @@
 //lambda expressions can be used to represent the instance of a functional interface. 
 //A functional interface can have any number of default methods. Runnable, ActionListener, Comparable 
 //are some of the examples of functional interfaces.
-package JavaConcepts;
+package org.practice.JavaConcepts;
 interface FuncInterface{
     void abstractFun(int x);
     default void normalFun(){

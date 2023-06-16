@@ -1,7 +1,7 @@
 package org.practice.phonePe.entity;
 
-import phonePe.enums.InstrumentType;
-import phonePe.enums.TransactionStatus;
+import org.practice.phonePe.enums.InstrumentType;
+import org.practice.phonePe.enums.TransactionStatus;
 
 import java.math.BigDecimal;
 

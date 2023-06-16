@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/egg-dropping-puzzle-dp-11/
-package DP;
+package org.practice.DP;
 //calculate the minimum number of attempts and find out the floor where the eggs just won’t be broken.
 //https://labuladong.gitbook.io/algo-en/i.-dynamic-programming/throwingeggsinhighbuildings
 public class EggDrop{

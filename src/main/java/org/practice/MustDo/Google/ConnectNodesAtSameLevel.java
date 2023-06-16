@@ -1,7 +1,7 @@
 //https://practice.geeksforgeeks.org/problems/connect-nodes-at-same-level/1
 //https://www.geeksforgeeks.org/must-coding-questions-company-wise/#google
 //https://www.geeksforgeeks.org/connect-nodes-level-level-order-traversal/
-package MustDo.Google;
+package org.practice.MustDo.Google;
 
 import java.util.LinkedList;
 import java.util.Queue;

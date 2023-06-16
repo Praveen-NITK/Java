@@ -20,7 +20,7 @@
 // DDRDRR DRDDRR
 //#endregion
 
-package BackTracking;
+package org.practice.BackTracking;
 
 public class RatInMaze{
     static String moves="";

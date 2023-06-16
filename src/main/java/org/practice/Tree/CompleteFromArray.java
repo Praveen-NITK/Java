@@ -1,6 +1,6 @@
 //Construct a complete binary tree from array or Level Order
 //https://www.geeksforgeeks.org/given-linked-list-representation-of-complete-tree-convert-it-to-linked-representation/
-package Tree;
+package org.practice.Tree;
 
 public class CompleteFromArray{
 

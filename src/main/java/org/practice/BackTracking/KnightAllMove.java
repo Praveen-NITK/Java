@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/the-knights-tour-problem-backtracking-1/
-package BackTracking;
+package org.practice.BackTracking;
 
 public class KnightAllMove{
     static int N=8;

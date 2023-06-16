@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/maximum-size-rectangle-binary-sub-matrix-1s/
-package Matrix;
+package org.practice.Matrix;
 public class MaxSizeRectangle{
     public static void main(String[] args) {
         int input[][]={{0,1,1,0},

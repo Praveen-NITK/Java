@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/topological-sorting/
-package Graph;
+package org.practice.Graph;
 
 import java.util.LinkedList;
 import java.util.Stack;

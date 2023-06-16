@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/sort-a-string-in-java-2-different-ways/
-package Strings;
+package org.practice.Strings;
 
 import java.util.Arrays;
 import java.util.Comparator;

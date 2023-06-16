@@ -9,7 +9,7 @@
 // A function that can be created without belonging to any class.
 // A lambda expression can be passed around as if it was an object and executed on demand.
 
-package JavaConcepts.Lambda;
+package org.practice.JavaConcepts.Lambda;
 public class LambdaExpression{
 
     public static void greet(Greeting greeting){

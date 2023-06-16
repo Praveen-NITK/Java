@@ -1,21 +1,21 @@
 package org.practice.LinkedLists;
 
-import LinkedLists.CreateLL.Node;
+
 
 public class ReverseLL{
     public static void main(String[] args) {
-        Node head= reverseLL(LinkedLists.CreateLL.createLL());
-        LinkedLists.CreateLL.printLL(head);
+        CreateLL.Node head= reverseLL(CreateLL.createLL());
+        CreateLL.printLL(head);
 
-        Node reversed=recursiveReverse(LinkedLists.CreateLL.createLL(),null);
-        LinkedLists.CreateLL.printLL(reversed);
+        CreateLL.Node reversed=recursiveReverse(CreateLL.createLL(),null);
+        CreateLL.printLL(reversed);
     }
 
-    private static Node reverseLL(Node head) {
-        Node prev=null;
+    private static CreateLL.Node reverseLL(CreateLL.Node head) {
+        CreateLL.Node prev=null;
 
         while(head!=null){
-            Node next=head.next;
+            CreateLL.Node next=head.next;
             head.next=prev;
             prev=head;
             head=next;
@@ -23,9 +23,9 @@ public class ReverseLL{
         return prev;
     }
 
-    static Node head=null;    
+    static CreateLL.Node head=null;
 
-    public static Node recursiveReverse(Node node, Node prevp){
+    public static CreateLL.Node recursiveReverse(CreateLL.Node node, CreateLL.Node prevp){
         
         if(node.next==null){
             head=node;
@@ -33,7 +33,7 @@ public class ReverseLL{
             return head;
         }
 
-        Node nextp=node.next;
+        CreateLL.Node nextp=node.next;
         node.next=prevp;
         recursiveReverse(nextp,node);
         return head;

@@ -1,7 +1,7 @@
 package org.practice.phonePe.payment;
 
-import phonePe.entity.Transaction;
-import phonePe.enums.TransactionStatus;
+import org.practice.phonePe.entity.Transaction;
+import org.practice.phonePe.enums.TransactionStatus;
 
 import java.util.LinkedList;
 import java.util.List;

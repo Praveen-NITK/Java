@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/check-binary-tree-contains-duplicate-subtrees-size-2/
-package MustDo.Google;
+package org.practice.MustDo.Google;
 
 import java.util.HashSet;
 

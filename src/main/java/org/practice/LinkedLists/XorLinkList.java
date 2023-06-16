@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/
-package LinkedLists;
+package org.practice.LinkedLists;
 public class XorLinkList{
     static class Node{
         char data;

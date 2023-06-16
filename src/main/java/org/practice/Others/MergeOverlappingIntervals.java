@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/merging-intervals/
-package Others;
+package org.practice.Others;
 
 import java.util.Arrays; 
 import java.util.Comparator;

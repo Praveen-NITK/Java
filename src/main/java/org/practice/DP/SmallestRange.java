@@ -1,7 +1,7 @@
 //https://www.geeksforgeeks.org/find-smallest-range-containing-elements-from-k-lists/
 //Flipkart
 
-package DP;
+package org.practice.DP;
 public class SmallestRange{
     public static void main(String[] args) {
         int k=3;

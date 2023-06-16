@@ -9,7 +9,7 @@
 //     right();
 // }
 
-package Others;
+package org.practice.Others;
 public class RobotMeet{
     static class Robot{
         String name;

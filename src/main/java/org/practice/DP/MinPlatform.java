@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/
-package DP;
+package org.practice.DP;
 public class MinPlatform{
     public static void main(String[] args) {
         double []arrival={9,9.4,9.5,11,15,18};

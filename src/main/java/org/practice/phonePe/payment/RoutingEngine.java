@@ -1,6 +1,6 @@
 package org.practice.phonePe.payment;
 
-import phonePe.enums.InstrumentType;
+import org.practice.phonePe.enums.InstrumentType;
 
 public class RoutingEngine {
     private long entityId;

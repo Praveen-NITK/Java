@@ -1,5 +1,5 @@
 //T(n)=2T(n/2)+4n
-package Recursion;
+package org.practice.Recursion;
 public class Recurrence{
     public static void main(String[] args) {
         System.out.format("T(n) for %d: is %d",8,solveRecursion(8));

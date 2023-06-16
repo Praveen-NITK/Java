@@ -1,7 +1,7 @@
 //https://www.geeksforgeeks.org/must-coding-questions-company-wise/#google
 //https://practice.geeksforgeeks.org/problems/jumping-numbers/0#ExpectOP
 //https://www.geeksforgeeks.org/print-all-jumping-numbers-smaller-than-or-equal-to-a-given-value/
-package MustDo.Google;
+package org.practice.MustDo.Google;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,7 @@
 package org.practice.phonePe;
 
 
-import phonePe.enums.InstrumentType;
+import org.practice.phonePe.enums.InstrumentType;
 
 import java.util.List;
 

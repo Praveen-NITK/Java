@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/clockwise-spiral-traversal-of-binary-tree-set-2/
-package Tree;
+package org.practice.Tree;
 public class SpiralLevelOrder{
     static class Node{
         int data;

@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-import JavaConcepts.Lambda.ExcerciseJava7.Condition;
 
 public class ExcerciseJava8{
     public static void main(String[] args) {

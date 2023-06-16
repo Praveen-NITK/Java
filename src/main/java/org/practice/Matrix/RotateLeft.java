@@ -34,7 +34,7 @@
 //  3  7 11 15 
 //  2  6 10 14 
 //  1  5  9 13
-package Matrix;
+package org.practice.Matrix;
 public class RotateLeft{
     public static void main(String[] args) {
         // int[][] input= {{1,2,3},

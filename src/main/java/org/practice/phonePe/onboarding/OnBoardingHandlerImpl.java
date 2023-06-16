@@ -1,6 +1,6 @@
 package org.practice.phonePe.onboarding;
 
-import phonePe.Merchant;
+import org.practice.phonePe.Merchant;
 
 import java.util.LinkedList;
 import java.util.List;

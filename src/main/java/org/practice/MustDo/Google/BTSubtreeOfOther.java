@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/check-if-a-binary-tree-is-subtree-of-another-binary-tree/
-package MustDo.Google;
+package org.practice.MustDo.Google;
 public class BTSubtreeOfOther
 {
     static class Node{

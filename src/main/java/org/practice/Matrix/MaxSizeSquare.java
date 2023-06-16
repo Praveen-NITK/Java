@@ -1,5 +1,5 @@
 //DP: https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
-package Matrix;
+package org.practice.Matrix;
 public class MaxSizeSquare{
     static int maxSizedSquareWith1=Integer.MIN_VALUE;
     public static void main(String[] args) {

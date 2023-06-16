@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/swap-kth-node-from-beginning-with-kth-node-from-end-in-a-linked-list/
-package LinkedLists;
+package org.practice.LinkedLists;
 public class SwapKthNodeFromBothEnd{
     static class Node{
         int data;

@@ -2,7 +2,7 @@
 //all text nodes are leaf node
 // all other nodes must have two childs
 //print the character for given position 3:c, 7:g etc
-package Tree;
+package org.practice.Tree;
 
 import java.util.Stack;
 

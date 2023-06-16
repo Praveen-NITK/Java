@@ -1,5 +1,5 @@
 //Find frequency count of element in sorted array
-package Searchings;
+package org.practice.Searchings;
 public class FrequencyCountBS{
     public static void main(String[] args) {
         int [] input= {1,1,2,2,3,4,4,4,4,4,4,5,6,6,6,7,7,7};

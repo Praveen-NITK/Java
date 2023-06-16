@@ -1,4 +1,4 @@
-package org.practice.org.practice.file;
+package org.practice.file;
 
 import java.io.*;
 import java.util.ArrayList;

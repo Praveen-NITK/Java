@@ -1,6 +1,6 @@
 package org.practice.phonePe.payment;
 
-import phonePe.entity.Transaction;
+import org.practice.phonePe.entity.Transaction;
 
 import java.util.concurrent.TimeoutException;
 

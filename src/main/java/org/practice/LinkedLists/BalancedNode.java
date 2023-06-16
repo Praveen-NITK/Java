@@ -1,6 +1,6 @@
 //https://www.geeksforgeeks.org/find-the-balanced-node-in-a-linked-list/
 //Left sum and right sum is equal
-package LinkedLists;
+package org.practice.LinkedLists;
 public class BalancedNode{
     static class Node{
         int data;

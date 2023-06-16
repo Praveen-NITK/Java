@@ -3,7 +3,7 @@
 //1. root to leaf all path
 //2. root to leaf path for particular sum
 
-package Tree;
+package org.practice.Tree;
 
 import java.util.ArrayList;
 

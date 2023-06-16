@@ -1,6 +1,6 @@
 //https://medium.com/algorithm-and-datastructure/last-stone-weight-dbc948aab8a
 ////No Broker dot com
-package Heap;
+package org.practice.Heap;
 import java.util.Collections;
 import java.util.PriorityQueue;
 

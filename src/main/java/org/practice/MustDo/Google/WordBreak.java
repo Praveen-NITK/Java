@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/word-break-problem-dp-32/
-package MustDo.Google;
+package org.practice.MustDo.Google;
 
 import java.util.ArrayList;
 import java.util.Arrays;

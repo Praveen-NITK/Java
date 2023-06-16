@@ -1,5 +1,5 @@
 // Java code to illustrate Reentrant Locks 
-package MultiThreading;
+package org.practice.MultiThreading;
 import java.text.SimpleDateFormat; 
 import java.util.Date; 
 import java.util.concurrent.ExecutorService; 

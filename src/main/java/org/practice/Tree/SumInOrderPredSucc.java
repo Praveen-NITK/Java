@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/replace-node-binary-tree-sum-inorder-predecessor-successor/
-package Tree;
+package org.practice.Tree;
 
 import java.util.Arrays;
 

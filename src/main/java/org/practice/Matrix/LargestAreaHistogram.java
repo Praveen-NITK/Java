@@ -1,7 +1,7 @@
 //https://www.geeksforgeeks.org/largest-rectangle-under-histogram/
 
 //Java program to find maximum rectangular area in linear time 
-package Matrix;
+package org.practice.Matrix;
 import java.util.Stack; 
 
 public class LargestAreaHistogram

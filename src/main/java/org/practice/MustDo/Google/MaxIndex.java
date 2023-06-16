@@ -1,7 +1,7 @@
 //https://practice.geeksforgeeks.org/problems/maximum-index/0
 //https://www.geeksforgeeks.org/given-an-array-arr-find-the-maximum-j-i-such-that-arrj-arri/
 //Amazon 
-package MustDo.Google;
+package org.practice.MustDo.Google;
 public class MaxIndex{
     public static void main(String[] args) {
         int []input={34,8,10,3,2,8,6,3,1};//{304,8,10,3,2,80,3,6,7};

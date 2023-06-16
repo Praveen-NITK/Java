@@ -1,5 +1,4 @@
 package org.practice.DesignPattern.ObserverPattern;
-import DesignPattern.ObserverPattern.CurrentConditionDisplay;
 public class WeatherStation{
     public static void main(String[] args) {
         WeatherData weatherData= new WeatherData();

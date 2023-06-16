@@ -1,9 +1,9 @@
 package org.practice.phonePe.payModes;
 
-import phonePe.Merchant;
-import phonePe.enums.InstrumentType;
-import phonePe.onboarding.IOnBoardingHandler;
-import phonePe.onboarding.OnBoardingHandlerImpl;
+import org.practice.phonePe.Merchant;
+import org.practice.phonePe.enums.InstrumentType;
+import org.practice.phonePe.onboarding.IOnBoardingHandler;
+import org.practice.phonePe.onboarding.OnBoardingHandlerImpl;
 
 import java.util.LinkedList;
 import java.util.List;
