@@ -29,6 +29,7 @@ public class TreeWidth {
         Set<Integer> distanceSet= new HashSet<>();
         getWidth(distanceSet,root,0);
         System.out.println(distanceSet.size());
+        System.out.println(distanceSet);
     }
 
     private static void getWidth(Set<Integer> distanceSet,Node root,int current) {
