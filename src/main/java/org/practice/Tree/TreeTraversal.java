@@ -19,13 +19,13 @@ public class TreeTraversal {
         root.left.right.right= new TreeNode(8);
         root.right.left= new TreeNode(12);
         root.right.right= new TreeNode(25);
-        //List<Integer> output= preorderTraversalIterative(root);
+        List<Integer> output= preorderTraversalIterative(root);
 //        List<Integer> output= breadthFirstTraversal(root);
         //List<Integer> output= postTraversalIterative(root);
         //List<Integer> output=iterativeInOrder(root);
-//        System.out.println(output.toString());
-        printPreOrderWithIndentation(root,0);
-        printPreOrderWithIndentationAndLabel(root,new ArrayList<Integer>());
+        System.out.println(output.toString());
+//        printPreOrderWithIndentation(root,0);
+//        printPreOrderWithIndentationAndLabel(root,new ArrayList<Integer>());
     }
 
     public static List<Integer> preorderTraversalIterative(TreeNode root) {

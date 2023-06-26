@@ -1,6 +1,5 @@
 package org.practice.Strings;
 //Check if string has all unique chars, no additional DS
-//Wrong Implementation
 public class UniqueChars{
     public static void main(String[] args) {
         String input="string";
@@ -9,9 +8,12 @@ public class UniqueChars{
     }
 
     private static boolean isUniqueChars(String input) {
-        for (char ch : input.toCharArray()) {
-            System.out.println(ch%5);
+        for (int i = 0; i < input.length(); i++) {
+            for (int j = i+1; j <input.length() ; j++) {
+                if (input.charAt(i)==input.charAt(j))
+                    return false;
+            }
         }
-        return false;
+        return true;
     }
 }
