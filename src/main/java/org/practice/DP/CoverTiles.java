@@ -13,7 +13,7 @@ public class CoverTiles{
             return 1;
         if(n==2)
             return 2;
-        // if we put tiles verically (n-1)+horizontally (n-2)
+        // if we put tiles vertically (n-1)+horizontally (n-2)
         return findNoOfWays(n-1)+findNoOfWays(n-2); // Same as fibonnaci except terminating condition
     }
 

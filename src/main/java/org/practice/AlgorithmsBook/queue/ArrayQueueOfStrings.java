@@ -15,7 +15,8 @@ public class ArrayQueueOfStrings implements QueueImplementation<String> {
         if (N== queue.length){
             resize(queue.length*2);
         }
-        queue[N++]=s;
+        queue[N]=s;
+        N++;
     }
 
     private void resize(int capacity) {

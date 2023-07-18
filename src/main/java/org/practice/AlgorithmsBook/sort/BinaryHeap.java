@@ -31,7 +31,7 @@ public class BinaryHeap<T extends Comparable<T>> {
         //swap
         swap(0,--N);
         sink(0);
-        bhp[N+1]=null;
+        bhp[N]=null;
     }
 
     private void swap(int i,int j) {
@@ -58,6 +58,7 @@ public class BinaryHeap<T extends Comparable<T>> {
         bp.insert(4);
         bp.insert(5);
         bp.insert(3);
+        bp.insert(1);
         bp.deleteMax();
     }
 }

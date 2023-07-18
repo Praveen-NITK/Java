@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 //https://labuladong.gitbook.io/algo-en/iii.-algorithmic-thinking/detailsaboutbacktracking
 //In Debug mode output can be visualized
+// Other way: https://www.youtube.com/watch?v=bRs6E_SL2Tk&list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop&index=20
 public class NQueen {
     public static List<List<char[]>> res=new ArrayList<>();
     public static void main(String[] args) {
