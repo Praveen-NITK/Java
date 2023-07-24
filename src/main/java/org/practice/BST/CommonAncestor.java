@@ -20,18 +20,18 @@ public class CommonAncestor{
         root= constructBst(root, 6);
         root= constructBst(root, 8);
 
-        Node lca=findLowestCommonAncestor(root,6,8);
+        Node lca= findLowestCommonAncestorInBST(root,6,8);
         System.out.println(lca.data);
 
     }
 
-    private static Node findLowestCommonAncestor(Node root, int i, int j) {
+    private static Node findLowestCommonAncestorInBST(Node root, int i, int j) {
         if(root==null)
             return null;
         if(i<root.data && j<root.data)
-            return findLowestCommonAncestor(root.left, i, j);
+            return findLowestCommonAncestorInBST(root.left, i, j);
         else if(i>root.data && j>root.data)
-            return findLowestCommonAncestor(root.right, i, j);
+            return findLowestCommonAncestorInBST(root.right, i, j);
         return root;
     }
 

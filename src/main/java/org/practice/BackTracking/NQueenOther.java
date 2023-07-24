@@ -8,13 +8,16 @@ import java.util.stream.Stream;
 public class NQueenOther {
     static int[] aux;
     static ArrayList<int[]> res;
-    final static Integer BOARD_SIZE=7;
+    final static Integer BOARD_SIZE=4;
     public static void main(String[] args) {
         int [][]board=new int[BOARD_SIZE][BOARD_SIZE];
         aux=new int[board.length];
         res=new ArrayList<>();
         Arrays.fill(aux,-1);
+
         backTrack(board,0);
+
+        //print the output
         for (int[] arr:res) {
             for (int i = 0; i < arr.length ; i++) {
                 //9= to represent a queen in board

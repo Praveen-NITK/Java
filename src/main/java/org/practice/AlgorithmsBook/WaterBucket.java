@@ -8,11 +8,15 @@ package org.practice.AlgorithmsBook;
  */
 public class WaterBucket {
     public static void main(String[] args) {
-        waterBucketSteps(3,5,4);
+        waterBucketSteps(3,5,2);
     }
 
     //https://www.geeksforgeeks.org/two-water-jug-puzzle/
     private static void waterBucketSteps(int firstCap, int secondCap, int target) {
+        if(target>=firstCap && target>=secondCap) {
+            System.out.println("No solution exists!");
+            return;
+        }
         int from = firstCap;
         int to =0;
         while(from!=target && to!=target){
@@ -24,8 +28,7 @@ public class WaterBucket {
             to+=pourWater;
 
             System.out.println(from+ " "+ to);
-//          if(from==target || to==target)
-//              break;
+
             if(from==0)
                 from=firstCap;
             if(to==secondCap)

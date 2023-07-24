@@ -2,9 +2,9 @@
 package org.practice.ArrayPrograms;
 public class MaxWaterHistogram{
     public static void main(String[] args) {
-        //int input[] = {4, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 4};
+        int input[] = {4, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 4};
 //        int input[] = {4, 1, 0, 2, 1, 0, 1, 3};
-        int input[] = {1,8,6,2,5,4,8,3,7};
+        //int input[] = {1,8,6,2,5,4,8,3,7};
         System.out.println(maxWater(input));
         System.out.println(OptimizedMaxWater(input));
         System.out.println(trap(input));
@@ -79,28 +79,27 @@ public class MaxWaterHistogram{
     }
 
     private static int waterStore(int[] input){
-        //Result
-        int result=0;
+        int N = input.length - 1;
 
-        //Two pointers left and right
-        int left=0,right=input.length-1;
+        int leftMax=input[0];
+        int rightMax=input[N];
 
-        // LeftMax and rightMax values
-        int left_max=input[left];
-        int right_max=input[right];
+        int maxWater=0;
 
-        while(left<=right){
-            left_max=Math.max(left_max,input[left]);
-            right_max=Math.max(right_max,input[right]);
-            if(left_max<right_max){
-                result+=left_max-input[left];
-                left++;
+        for (int i = 1; i < N; i++) {
+            if(leftMax<input[i])
+                leftMax=input[i];
+
+            if(rightMax<input[N-i])
+                rightMax=input[N-i];
+
+            if(leftMax<rightMax){
+                maxWater+=leftMax-input[i];
             }
-            else {
-                result+=right_max-input[right];
-                right--;
+            else{
+                maxWater+=rightMax-input[i];
             }
         }
-        return result;
+        return maxWater;
     }
 }

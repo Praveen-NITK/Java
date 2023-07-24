@@ -1,5 +1,8 @@
 package org.practice.BackTracking;
 //https://www.geeksforgeeks.org/travelling-salesman-problem-implementation-using-backtracking/
+//Given a set of cities and distance between every pair of cities,
+// the problem is to find the shortest possible route that visits every city exactly once
+// and returns back to the starting point.
 public class TSP{
     public static void main(String[] args) {
         int n=4;
