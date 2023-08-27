@@ -8,7 +8,7 @@ import java.util.HashSet;
 
 public class SubsetArray{
     public static void main(String[] args) {
-        int []arr= new int[]{3,5};
+        int []arr= new int[]{3,6,5};
         int []subArr=new int[]{6,5};
         boolean isSubset;//=isSubsetUsingHashSet(subArr,arr);
 

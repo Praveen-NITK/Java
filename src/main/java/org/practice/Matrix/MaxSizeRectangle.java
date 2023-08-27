@@ -4,7 +4,7 @@ public class MaxSizeRectangle{
     public static void main(String[] args) {
         int input[][]={{0,1,1,0},
                         {1,1,1,1},
-                        {1,1,0,1},
+                        {1,1,1,1},
                         {1,1,0,0}};
 
         int maxArea=getMaxAreaRectangle(input);

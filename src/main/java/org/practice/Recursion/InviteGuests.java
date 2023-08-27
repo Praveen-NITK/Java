@@ -18,7 +18,7 @@ public class InviteGuests {
         //Single - after calling one guest left over guest are n-1
         int single=inviteWays(noOfGuests-1);
 
-        //couple =for one guest no of optiones to choose couple is n-1
+        //couple =for one guest no of options to choose couple is n-1
         int couple= (noOfGuests-1)*inviteWays(noOfGuests-2);
 
         return single+couple;

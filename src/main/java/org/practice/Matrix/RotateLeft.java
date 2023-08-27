@@ -59,7 +59,7 @@ public class RotateLeft{
                         {25,26,27,28,29,30},
                         {31,32,33,34,35,36}};
         int [][] output= rotateMatrix(input);
-        inPlaceRotate(input);
+        //inPlaceRotate(input);
         System.out.println();
         for (int i = 0; i < output.length; i++) {
             for (int j = 0; j < output[0].length; j++) {

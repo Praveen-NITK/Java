@@ -4,10 +4,11 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Stack;
-
+//Please Dont run this class
 public class ExtractFile {
     public static void main(String[] args) {
-        File path = new File("C:\\Users\\Admin\\Desktop\\practiceOn\\src\\main\\java\\org\\practice");
+        //File path = new File("C:\\Users\\Admin\\Desktop\\practiceOn\\src\\main\\java\\org\\practice");
+        File path = new File("");
         Stack<File> fileStack = new Stack<>();
         fileStack.add(path);
 //        int counter=0;

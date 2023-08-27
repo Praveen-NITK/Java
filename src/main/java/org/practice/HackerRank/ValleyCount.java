@@ -11,7 +11,8 @@ package org.practice.HackerRank;
  *
  * steps = 8 path = [DDUUUUDD]
  *
- * The hiker first enters a valley 2 units deep. Then they climb out and up onto a mountain 2 units high. Finally, the hiker returns to sea level and ends the hike.
+ * The hiker first enters a valley 2 units deep. Then they climb out and up onto a mountain 2 units high. Finally,
+ * the hiker returns to sea level and ends the hike.
  *
  * Function Description
  *

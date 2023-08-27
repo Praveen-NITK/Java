@@ -22,25 +22,28 @@ public class MainDemo {
         empList.add(new Employee("darsh",14000,"A"));
         empList.add(new Employee("janani",4000,"B"));
 
-//        groupByDepartment(empList);
+        groupByDepartment(empList);
 //        getHighestSalariedEmployee(empList);
 //        getLowestSalariedEmployee(empList);
 //        countEmployeeByDept(empList);
 //        groupByDeptWithCondition(empList);
 //        getNameWithCondition(empList);
 //        getAverageSalary(empList);
-        getTotalAndAverageSalary(empList);
+//        getTotalAndAverageSalary(empList);
 
     }
 
     private static void groupByDepartment(List<Employee> empList) {
         Map<String,List<Employee>> grpByDept=empList.stream().collect(Collectors.groupingBy(Employee::getDept));
 
+//        for (Map.Entry<String ,List<Employee>> entry : grpByDept.entrySet()) {
+//            System.out.println(entry.getKey());
+//            entry.getValue().forEach(employee -> System.out.printf("%s%n",employee));
+//        }
         grpByDept.forEach((dept,emp)->{
             System.out.println(dept);
             emp.forEach(employee -> System.out.printf("%s%n",employee));
         });
-
     }
 
     private static void getHighestSalariedEmployee(List<Employee> empList) {

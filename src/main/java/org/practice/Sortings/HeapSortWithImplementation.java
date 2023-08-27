@@ -1,4 +1,4 @@
-package org.practice.org.practice.Sortings;
+package org.practice.Sortings;
 
 import java.util.Arrays;
 

@@ -14,7 +14,8 @@ import java.util.*;
 /**
  * Example
  * Sample input: 10:5:{{0,4},{6,3},{1,5},{6,4},{7,2}}
- * Here 10 is the length of the rope in meters. 5 is the number of clothes hung on rope. The first cloth starts from 0 and covers 4 sections from 0. The second cloth starts at 6 and covers 3 sections from 6 and so on..
+ * Here 10 is the length of the rope in meters. 5 is the number of clothes hung on rope. The first cloth starts from 0
+ * and covers 4 sections from 0. The second cloth starts at 6 and covers 3 sections from 6 and so on..
  * Sample output: 4
  * The total number of clothes visible when seen from front is 4.
  */

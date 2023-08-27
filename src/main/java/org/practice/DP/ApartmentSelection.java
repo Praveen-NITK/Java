@@ -5,7 +5,8 @@ import java.util.Arrays;
 // -------------
 public class ApartmentSelection {
     public static void main(String[] args) {
-        int [][]input={{1,1,0},{0,0,1}};
+        int [][]input={{1,1,0},
+                        {0,0,1}};
         int n = input.length;
         int m = input[0].length;
         int[][]dp= new int[n][m+1];

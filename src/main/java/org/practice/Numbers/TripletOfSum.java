@@ -6,8 +6,9 @@ import java.util.Hashtable;
 public class TripletOfSum{
     
     public static void main(String[] args) {
-        int sum=13;
-        int[] arr= new int[]{1,2,4,8,3,5,6,9}; //with unique elements
+        int sum=7;
+//        int[] arr= new int[]{1,2,4,8,3,5,6,9,0}; //with unique elements
+        int[] arr= {-1,6,2,0,4,1,7}; //with unique elements
         printTripletsOfSum(arr,sum,arr.length);
     }
 

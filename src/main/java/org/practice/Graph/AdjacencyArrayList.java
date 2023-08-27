@@ -33,7 +33,7 @@ public class AdjacencyArrayList {
             addEdge(g,2,6);
 
 
-            //traverseBFS(g);
+            traverseBFS(g);
             traverseDFS(g);
         }
 
