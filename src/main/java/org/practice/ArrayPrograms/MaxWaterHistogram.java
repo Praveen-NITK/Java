@@ -2,7 +2,7 @@
 package org.practice.ArrayPrograms;
 public class MaxWaterHistogram{
     public static void main(String[] args) {
-        int input[] = {4, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 4};
+        int input[] = {4, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 4,1};
 //        int input[] = {4, 1, 0, 2, 1, 0, 1, 3};
         //int input[] = {1,8,6,2,5,4,8,3,7};
         System.out.println(maxWater(input));
@@ -93,12 +93,8 @@ public class MaxWaterHistogram{
             if(rightMax<input[N-i])
                 rightMax=input[N-i];
 
-            if(leftMax<rightMax){
-                maxWater+=leftMax-input[i];
-            }
-            else{
-                maxWater+=rightMax-input[i];
-            }
+            maxWater+=Math.min(leftMax,rightMax)-input[i];
+
         }
         return maxWater;
     }

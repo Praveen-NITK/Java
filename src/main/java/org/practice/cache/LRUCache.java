@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class LRUCache {
     static Queue<Integer> cache= new LinkedList<>();
-    static final int CACHE_SIZE=5;
+    static final int CACHE_SIZE=3;
 
     private  static void getElementFromCache(int x){
         int result;
@@ -42,10 +42,10 @@ public class LRUCache {
         putElementIntoCache(1);
         putElementIntoCache(2);
         putElementIntoCache(3);
-        putElementIntoCache(4);
+        putElementIntoCache(2);
         putElementIntoCache(5);
 
-        putElementIntoCache(3);
+        putElementIntoCache(6);
 
 //        putElementIntoCache(7);
 //        getElementFromCache(1);

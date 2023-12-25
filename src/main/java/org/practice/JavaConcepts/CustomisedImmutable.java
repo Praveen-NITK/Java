@@ -1,6 +1,6 @@
 package org.practice.JavaConcepts;
 
-import test.Student;
+import org.practice.Student;
 
 import java.util.ArrayList;
 import java.util.Collections;

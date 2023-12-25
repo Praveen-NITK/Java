@@ -1,4 +1,4 @@
-package test;
+package org.practice;
 
 import java.util.ArrayList;
 import java.util.Collections;

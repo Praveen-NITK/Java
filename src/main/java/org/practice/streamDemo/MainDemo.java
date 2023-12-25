@@ -69,7 +69,7 @@ public class MainDemo {
         System.out.println(emin);
     }
     private static void countEmployeeByDept(List<Employee> employeeList){
-        Map<String, Long> empCountByDept = employeeList.stream().collect(Collectors.groupingBy(Employee::getDept, TreeMap::new,Collectors.counting()));
+        Map<String, Long> empCountByDept = employeeList.stream().collect(Collectors.groupingBy(Employee::getDept, TreeMap::new, Collectors.counting()));
         empCountByDept.forEach((dept,count)->{
             System.out.println(dept+" has "+count);
         });

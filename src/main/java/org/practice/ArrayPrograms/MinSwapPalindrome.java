@@ -15,7 +15,7 @@ public class MinSwapPalindrome {
         int n= ch.length;
         for (int i = 0; i < n/2; i++) {
             if(ch[i]!=ch[n-1-i]){
-                count+=1;
+                count++;
             }
         }
         //if count is odd and n is even ... no solution

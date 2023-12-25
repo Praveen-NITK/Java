@@ -1,0 +1,71 @@
+You are assigned to provide software for a prototype automated parking garage. it will have three sizes of parking spaces, Small, Medium, and Large.
+There will be 50 small spaces, 100 medium spaces, and 30 large spaces.
+Customers will drive onto an automated lift that will measure the car automatically and classify it as Small, Medium, or Large.
+A terminal will show the customer the total open spots available for their car size.
+
+The customer will leave their car on the lift for parking; if they do, they get a ticket with a unique identifier printed by the terminal. The lift will then move the car to the most appropriate spot. The Customer will present the ticket at exit to get his Car at the exit gate post payment.
+---------------------
+Product key requirements:
+1. provide parking facility to different sizes
+2. able to provide total number of free spots available
+3. Amount calculation will be done and redirect to payment system
+4. Fixed price rate for different sizes and peak hour pricing
+5. can park only specific size vehicles in corresponding size spots
+
+assumption:
+1. vehicle measurement automation is there
+2. payment gateway is there
+
+================= API Design
+1. /getAvailableSpots
+	input-> vehicleType, garageId
+	output -> noOfFreeSpots
+2. /bookSpot
+	input -> vehicle, inTime, outTime, garageId
+	output -> bookingId
+3. /calculatePayment
+	input -> bookingId
+	output -> amount, breakDown
+
+InternalAPi- /payment
+		input - > amount, bookingId
+		output -> isPaid
+
+============DB Schema
+Booking
+-------
+id - primaryKey, sequential
+startTime - Timestamp
+endTime - Timestamp
+garageId - fk
+spotId - fk
+vehicleId -fk
+isPaid - boolean
+
+Garage
+------
+garageId - pk
+largeSpotRate - decimal
+mediumSpotRate -decimal
+smallSpotRate -decimal
+largeSpotPeakRate - decimal
+mediumSpotPeakRate -decimal
+smallSpotPeakRate -decimal
+
+Spots
+-----
+spotId - pk
+garageId -fk
+isavailable - boolean
+spotType - varchar (small,medum,large)
+
+Vehicle
+-------
+id - pk
+spotId - fk
+vehicleSize - varchar (small,medum,large)
+vehicleNumber
+
+
+
+

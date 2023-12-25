@@ -1,6 +1,6 @@
 package org.practice.AlgorithmsBook.queue;
 
-
+//Queue Implementation using array
 public class ArrayQueueOfStrings implements QueueImplementation<String> {
 
     String [] queue;

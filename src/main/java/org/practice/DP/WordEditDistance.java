@@ -31,10 +31,9 @@ public class WordEditDistance{
             return getMinEditDistance(i-1,j-1); //Skip case
         else {
             return Math.min(Math.min(
-                    getMinEditDistance(i,j-1)+1, //Inset
-                    getMinEditDistance(i-1,j)+1), //Delete
-                    getMinEditDistance(i-1,j-1)+1 //Replace
-            );
+                    getMinEditDistance(i,j-1), //Insert
+                    getMinEditDistance(i-1,j)), //Delete
+                    getMinEditDistance(i-1,j-1))+1; //Replace
         }
     }
 

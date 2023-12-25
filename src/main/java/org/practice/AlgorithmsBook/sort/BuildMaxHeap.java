@@ -1,4 +1,4 @@
-package org.practice.org.practice.AlgorithmsBook.sort;
+package org.practice.AlgorithmsBook.sort;
 
 import java.util.Arrays;
 
